@@ -1,0 +1,7 @@
+.col-rows .col:nth-child(odd) {
+    background-color: #afd9ee;
+}
+.col-rows .col:nth-child(even) {
+    background-color: #cccccc;
+
+}

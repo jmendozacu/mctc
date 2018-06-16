@@ -1,0 +1,74 @@
+body {
+    font-family: "Roboto Slab",sans-serif,"Apple Color Emoji";
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.main {
+    margin: 1em auto;
+    padding: 0;
+    max-width: 960px;
+    line-height: 2;
+    font-size: 24px;
+}
+.main h1 {
+    margin: 0;
+    font-size: 4em;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main h2,
+.main h3 {
+    margin: 0;
+    font-size: 1em;
+}
+.main p {
+    margin: 0;
+}
+.main blockquote {
+    margin: 0;
+}
+
+.demo {
+    text-indent: 1em;
+}
+.demo ul {
+    list-style: none;
+}
+
+.line {
+    position: relative;
+    color: #666;
+    background-color: #EFEFEF;
+}
+.line:before {
+    content: attr(index) '.';
+    position: absolute;
+    right: 10px;
+    margin-right: 100%;
+    width: 1em;
+    text-indent: 0;
+    text-align: center;
+    color: #666;
+}
+.line {
+    margin: 1px 0;
+    padding: 0 10px;
+    background-color: #EFEFEF;
+}
+
+.nolining h1 {
+    color: red;
+}
+.nolining h1 {
+    position: relative;
+}
+.nolining h1:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'not supported';
+    font-size: 16px;
+}

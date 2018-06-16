@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<h1>Minneapolis City Council by Ward</h1>
+
+		<script type="text/javascript">
+
+			var wards = [ "", "Ward 1", "Ward 2", "Ward 3", "Ward 4", "Ward 5", "Ward 6", "Ward 7", "Ward 8", "Ward 9", "Ward 10", "Ward 11", "Ward 12", "Ward 13", ];
+
+			var urls = [ "", "http://www.ci.minneapolis.mn.us/ward1/index.htm", "http://www.ci.minneapolis.mn.us/ward2/index.htm", "http://www.ci.minneapolis.mn.us/ward3/index.htm", "http://www.ci.minneapolis.mn.us/ward4/index.htm", "http://www.ci.minneapolis.mn.us/ward5/index.htm", "http://www.ci.minneapolis.mn.us/ward6/index.htm", "http://www.ci.minneapolis.mn.us/ward7/index.htm", "http://www.ci.minneapolis.mn.us/ward8/index.htm", "http://www.ci.minneapolis.mn.us/ward9/index.htm", "http://www.ci.minneapolis.mn.us/ward10/index.htm", "http://www.ci.minneapolis.mn.us/ward11/index.htm", "http://www.ci.minneapolis.mn.us/ward12/index.htm", "http://www.ci.minneapolis.mn.us/ward13/index.htm" ];
+
+			var council = [ "", "Kevin Reichbr", "Cam Gordon", "Diane Horstede", "Barbara Johnson", "Don Samuels", "Robert Lilligren", "Lisa Goodman", "Elizabeth Glidden", "Gary Schiff", "Meg Tuthill", "John Quincy", "Sandy Colvin Roy", "Betsy Hodges" ];
+
+			for (i = 1; i < council.length; i++) {
+				document.write("<b>" + wards[i] + " </b>" + "<a href=\"" + urls[i] + "\">" + council[i] + "</a><br />" );
+			}
+
+		</script>
+
+	</body>
+</html>
+
+<!-- Week 3 Project Part 1
+
+Create a web page named wk3part1.html for this project and save it to your webi1911/week3 directory.
+
+Navigate to the City of Minneapolis web site and click on the City Council tab.
+
+Create an array named council and poplulate it with all the council members names.
+
+Create a second array named wards and populate it with all the wards in Minneapolis.
+
+Create a third array named urls and populate it with the urls of all the city council members home pages.
+
+Use the document.write method to write all the council members names by ward with links to their home pages using the values of the arrays.
+
+See the screen shot named wk3part1.png for the expected result. -->

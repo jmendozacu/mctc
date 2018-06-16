@@ -1,0 +1,27 @@
+//media queries
+
+
+
+$screen-x-large: (
+  columns: 12,
+  gutter: 20px,
+  media: 2000px,        //applies to anything above this size
+);
+
+$screen-large: (
+  columns: 12,
+  gutter: 20px,
+  media: 970px,        //applies to anything above this size but below $screen-x-large
+);
+
+$screen-medium: (
+  columns: 12,
+  gutter: 20px,
+  media:400px,           //applies to anything above this size but below $screen-large
+);
+
+$screen-small: (
+  columns: 12,
+  gutter: 20px,
+  media: 0px,              //applies to anything above this size but below $screen-medium
+);

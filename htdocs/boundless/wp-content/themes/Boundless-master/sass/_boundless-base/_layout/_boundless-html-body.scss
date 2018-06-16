@@ -1,0 +1,41 @@
+
+
+html {
+  //we don't want grid collapse on html
+  //it pulls the page over
+  //@include grid-collapse();
+    cursor: default;
+
+}
+
+body {
+  //@include grid-visual;
+  background: white;
+  color: black;
+  margin: 0;
+  font-family: $heading-stack;
+}
+
+section, header {
+  @include grid-container;
+  // height: 100vh;
+  float: left;
+  width: 100%;
+  //border-bottom: 1px solid black;
+}
+header{
+  position: fixed;
+  z-index:1000;
+}
+.home{
+  header{
+    position: relative;
+    z-index:inherit;
+  }
+}
+// standard elements
+blockquote {
+  color: teal;
+  text-align: center;
+  font-size: 2rem;
+}

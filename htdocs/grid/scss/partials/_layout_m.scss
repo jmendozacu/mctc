@@ -1,0 +1,16 @@
+/*
+ * MEDIUM SCREENS
+ -------------------------------------------*/
+@media only screen
+and (min-width: $breakpoint_m) {
+  @for $i from 1 through 12 {
+    .m#{$i} {
+      width: $col * $i;
+    }
+  }
+  @for $i from 1 through 12 {
+    .offset-m#{$i} {
+      margin-left: $col * $i;
+    }
+  }
+}

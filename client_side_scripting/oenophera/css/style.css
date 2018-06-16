@@ -1,0 +1,251 @@
+/*
+ * GLOBAL
+------------------------------------------------------ */
+
+	body,
+	html {
+		margin: 0;
+		padding: 0;
+		height: 1000px;
+		color: #FFFFCC;
+	}
+	h1,
+	h2,
+	h3 {
+		font-family: 'Cardo', serif;
+		font-weight: lighter;
+	}
+	ul,
+	li {
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		font-weight: 100;
+		font-family: "Palatino";
+	}
+	.container {
+		max-width: 100%;
+		width: 100%;
+	}
+	.main .inner-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		clear: both;
+		padding: 100px 0;
+	}
+	.text-center {
+		text-align: center;
+	}
+
+/*
+ * HEADER
+------------------------------------------------------ */
+
+	.header {
+	   -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+	    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		background-image: url('../img/header-img.jpg');
+		background-attachment: fixed;
+		background-position: center -200px;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	    width: 100%;
+	    height: 400px;
+	    margin: 0 auto;
+	    padding: 2% 0 20% 0;
+	}
+	.navigation {
+		position: fixed;
+		width: 100%;
+	  	right: 0;
+	  	bottom: auto; /* or just remove */
+	  	left: 0;
+	  	z-index: 4;
+	}
+	.navigation p {
+		text-align: center;
+	}
+	.main_nav {
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+	}
+	.main_nav li {
+		margin: 1% 3%;
+		display: inline-block;
+		font-size: 25px;
+	}
+	.main_nav a {
+		color: #FFFFCC;
+		text-decoration: none;
+	}
+	.header-text {
+		letter-spacing: 8px;
+		font-size: 45px;
+		color: #FFFFCC;
+		margin-top: 20%;
+	}
+/*
+ * MAIN
+------------------------------------------------------ */
+	.main {
+		width: 100%;
+	}
+	.main .first-section {
+		padding: 100px 0;
+		margin-top: -100px;
+		min-height: 450px;
+	}
+	.main #index-first {
+		background: #661426 url("../img/mn-bg.png") no-repeat center 150%;
+	}
+	.main .first-section img {
+		margin: 0 auto;
+		display: block;
+	}
+	.section {
+		padding: 50px 0;
+		clear: both;
+	}
+	.large-col {
+		width: 70%;
+		float: left;
+		font-size: 25px;
+		padding: 0 2.5%;
+		line-height: 35px;
+	}
+	.small-col {
+		width: 20%;
+		float: left;
+		font-size: 25px;
+		padding: 0 2.5%;
+	}
+	.main #index-second {
+		background: url("../img/first-bg.jpg") no-repeat;
+		background-attachment: fixed;
+		min-height: 700px;
+	}
+	.main #second h2 {
+		font-size: 46px;
+	}
+	.main .third-col {
+		width: 30%;
+		padding: 1.6666666665555%;
+		float: left;
+	}
+	.main .third-col h3 {
+		font-size: 32px;
+	}
+	.main .third-col p {
+		font-size: 25px;
+	}
+	.main .large-col article {
+		padding: 0 8.333333333333%;
+	}
+	.main .half-col {
+		width: 40%;
+		padding: 0 5%;
+		float: left;
+	}
+	.wine-selections {
+		color: black;
+	}
+	.wine-selections h2 {
+		font-size: 32px;
+	}
+	.wine-selections p {
+		font-size: 25px;
+	}
+	.is-active {
+		display: block;
+		border-radius: 50%;
+		background-color: white;
+		width: 35px;
+		height: 35px;
+		position: relative;
+		top: 50%;
+		margin: 0 auto;
+		transform: translateY(-50%);
+    }
+    .wine-btn {
+    	border: 1px solid #993333;
+    }
+	.white-dark-btn {
+		background-color: #660000;
+	}
+	.white-medium-btn {
+		background-color: #993333;
+	}
+	.white-medium-light-btn {
+		background-color: #A85E22;
+	}
+	.white-light-btn {
+		background-color: #CC9933;
+	}
+	.red-wine-colors li,
+	.white-wine-colors li {
+		display: inline-block;
+	}
+	.red-wine-colors li a,
+	.white-wine-colors li a {
+		width: 50px;
+		height: 50px;
+		margin: 10px;
+		display: block;
+		border-radius: 50%;
+	}
+	.footer {
+		min-height: 1000px;
+		background: url("../img/footer-bg.jpg");
+		background-position: bottom;
+	}
+/*
+ * Mobile
+------------------------------------------------------ */
+
+@media (max-width: 580px) {
+	.header {
+		background-image: url("../img/mobile-header-img.jpg");
+		background-position: center 0px;
+		height: 300px;
+	}
+	.header .logo {
+		width: 60%;
+	}
+	.header .main_nav li a {
+		font-size: 16px;
+	}
+	.header .header-text {
+		font-size: 20px;
+	}
+	.main #index-first {
+		background: #661426 url("../img/mobile-mn-bg.png") no-repeat center 200px;
+		min-height: 700px;
+		height: 800px;
+	}
+	.main #index-second {
+		min-height: 700px;
+		background-image: url("../img/mobile-first-section-bg.jpg");
+		height: 1200px;
+	}
+	.main .first-section img {
+		width: 40%;
+	}
+	.main .large-col {
+		width: 95%;
+	}
+	.main .small-col {
+		width: 95%;
+	}
+	.main .half-col {
+		width: 95%;
+	}
+	.main .third-col {
+		width: 95%;
+	}
+	.footer {
+		background: url("../img/mobile-footer-bg.jpg");
+		height: 1200px;
+	}
+}

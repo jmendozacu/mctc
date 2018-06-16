@@ -1,0 +1,167 @@
+
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container {
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  width: 80%;
+}
+.row {
+  margin: 0 auto;
+  // Clear floating children
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.col {
+  float: left;
+  position: relative;
+  padding: 10px $pad;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.clearfix {
+  clear: both;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: darken($gray, 10);
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid #cccccc;
+  border-radius: .25rem;
+  margin: .5rem;
+  -webkit-transition: background-color .15s linear;
+  -moz-transition: background-color .15s linear;
+  -o-transition: background-color .15s linear;
+  transition: background-color .15s linear;
+  &:focus,
+  &:active:focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &.active.focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover {
+    background: darken($lightgray, 10);
+    color: $white;
+  }
+  &-large {
+    padding: 1.5rem;
+  }
+  &-wide {
+    width: 100%;
+  }
+  &-primary {
+    color: $white;
+    background: $primary;
+    border: none;
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    -o-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+    &:hover {
+      background: darken($primary, 10);
+    }
+  }
+  &-secondary {
+    color: $white;
+    background: $gray;
+    border: none;
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    -o-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+    &:hover {
+      background: darken($gray, 10);
+    }
+  }
+  &-black {
+    color: $white;
+    background: $black;
+    border: none;
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    -o-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+    &:hover {
+      background: lighten($black, 10);
+    }
+  }
+  &-danger {
+    color: $white;
+    background: $red;
+    border: none;
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    -o-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+    &:hover {
+      background: darken($red, 15);
+    }
+  }
+  &-success {
+    color: $white;
+    background: $green;
+    border: none;
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    -o-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+    &:hover {
+      background: darken($green, 10);
+    }
+  }
+}
+.card {
+  border-radius: 4px;
+  box-shadow: 0 0 3px $lightgray;
+  border: thin solid $lightgray;
+  h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child,p:first-child {
+    margin-top: 0;
+  }
+  .card-header {
+    padding: 15px 15px 0 15px;
+  }
+  .card-content {
+    padding: 15px;
+  }
+  .card-footer {
+    padding: 15px;
+    border-top: thin solid $lightgray;
+  }
+}
+form {
+}

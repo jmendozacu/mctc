@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+
+			var team = prompt("What is your favorite sports team?");
+
+			var opponents = [];
+			var scores = [];
+
+			var opponent = prompt("You're favorite team's 1st Opponent.");
+			opponents.push(opponent);
+			var score = prompt("What were their scores and did your team win or lose?");
+			scores.push(score);
+
+			var opponent = prompt("You're favorite team's 2nd Opponent.");
+			opponents.push(opponent);
+			var score = prompt("What were their scores and did your team win or lose?");
+			scores.push(score);
+
+			var opponent = prompt("You're favorite team's 3rd Opponent.");
+			opponents.push(opponent);
+			var score = prompt("What were their scores and did your team win or lose?");
+			scores.push(score);
+
+			var opponent = prompt("You're favorite team's 4th Opponent.");
+			opponents.push(opponent);
+			var score = prompt("What were their scores and did your team win or lose?");
+			scores.push(score);
+
+			var opponent = prompt("You're favorite team's 5th Opponent.");
+			opponents.push(opponent);
+			var score = prompt("What were their scores and did your team win or lose?");
+			scores.push(score);
+
+			document.write("<h1>My favorite sports team: " + team + "</h1>");
+
+			document.write("<h5<b>" + opponents.join(", ") + "</h5</b><p>" + scores.join(", ") + "</p><br />");
+
+			document.write("Week: " + opponent.length);
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- Week 3 Project Part 2
+	
+	Create a web page named wk3part2.html for this project and save it to your webi1911/week3 directory.
+
+	Create two empty arrays, one named scores and the other named opponents.
+
+	Prompt the user once for the name of their favorite sports team.
+
+	Prompt the user for the name of their favorite teams 1st opponent of the season followed by a second prompt for the score including a W or L indicating if their favorite team won or lost the game.
+
+	Use the push() method to add the opponent to the opponents array and the score including the W or L to the scores array.
+
+	Repeat the previous two steps 4 more times to collect data on the next four games.
+
+	Use the join() method and the document.write method to write all the opponents and scores to the page.
+
+	Use the array length poperty and the document.write method  to print the current week of the season to the page.
+
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	See the screen shot named wk3part2.png for the expected result.
+
+	var apples = [];
+
+	var apple = prompt("Please enter the name of your favorite apple.");
+
+	apples.push(apple);
+
+	apple = prompt("Please enter the name of your second favorite apple.");
+
+	apples.push(apple);
+
+	apple = prompt("Please enter the name of your third favorite apple.");
+
+	apples.push(apple);
+
+	document.write("<p>These are my favorite apples: " + apples.join(", ") + "</p>"); -->

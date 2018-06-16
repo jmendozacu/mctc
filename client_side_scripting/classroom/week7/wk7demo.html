@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Week 7 Demo</title>
+	<style type="text/css">
+		.myalert {
+			color: red;
+		}
+	</style>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// Select by element
+			$("h1").css("color", "red");
+			// Select by ID 
+			$("#myid").css("color", "blue");
+			// Select by Class
+			$("h1.myclass").css("color", "teal");
+			// Select by 
+			$("h1.myclass").css({
+				"color" : "teal",
+				"backgroundColor" : "black",
+				"font-family" : "helvetica",
+				"height" : "50px"
+			});
+			// Let's chain some methods and make it animate.
+			$(".myclass2").css("color", "orange").fadeOut(2000);
+			// Advanced selectors
+			$("li:first").addClass("myalert");
+			// A caret selects anything after the = with quotes
+			$("#myList li[class^='myL']").each(function() {
+				$(this).css("text-decoration", "underline");
+			});
+			$(function() {
+			  	$( "#datepicker" ).datepicker();
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- apply css using jquery -->
+<h1>Style with jQuery by Selecting Element</h1>
+<h1 id="myid">Style with jQuery by Selecting id</h1>
+<h1 class="myclass">Style with jQuery by Selecting class</h1>
+<h1 class="myclass2">Style with jQuery by Chaining JQ Methods</h1>
+
+<!-- apply css using addClass method. -->
+<ul>
+	<li>item 1</li>
+	<li>item 2</li>
+	<li>item 3</li>
+	<li>item 4</li>
+	<li>item 5</li>
+	<li>item 6</li>
+	<li>item 7</li>
+</ul>
+
+<!-- use each function -->
+<ul id="myList">
+	<li class="myListItem">item 1</li>
+	<li>item 2</li>
+	<li>item 3</li>
+	<li class="myListItem">item 4</li>
+	<li>item 5</li>
+	<li>item 6</li>
+	<li class="myListItem">item 7</li>
+</ul>
+
+<!-- using jquery ui library -->
+<form>
+	<p>Date: <input type="text" id="datepicker" /></p>
+</form>
+</body>
+</html>

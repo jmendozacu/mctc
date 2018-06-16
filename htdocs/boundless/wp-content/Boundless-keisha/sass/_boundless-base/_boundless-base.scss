@@ -1,0 +1,24 @@
+//imports Eric Meyers' reset
+@import "_utilities/_reset";
+
+//imports media queries
+@import "_utilities/media-queries";
+
+//imports the boundless color palette
+@import "_color/boundless-color";
+
+//imports the boundless specific mixins and variables
+@import "_mixins/boundless-mixins";
+@import "_variables/boundless-variables";
+
+//imports the boundless specific type systems
+@import "_typography/boundless-typography";
+
+//imports the boundless navigation ul li styles
+@import "_navigation/boundless-navigation-styles";
+
+//imports the boundless buttons
+@import "_buttons/boundless-buttons";
+
+//imports the layout built by keisha
+@import "_layout/boundless-layout";

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array Properties and Methods</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		var theNames = new Array(3);
+
+		theNames[0] = "Jack";
+		theNames[1] = "John";
+		theNames[2] = "Jill";
+
+		// Adding theNames[3] would just add on items
+
+		document.write(theNames.length + "<br />");
+		document.write(theNames.join() + "<br />"); // join() will join array values as strings
+		document.write(theNames.join(".") + "<br />"); // join() will join array values as strings
+		document.write(theNames.join(" ") + "<br />"); // join() will join array values as strings
+		document.write(theNames.reverse(" ") + "<br />"); // join() will join array values as strings
+		document.write(theNames.push("Bill", "Frank") + "<br />"); // join() will join array values as strings
+		document.write(theNames.join(" ") + "<br />"); // join() will join array values as strings
+		document.write(theNames.toString() + "<br />"); // join() will join array values as strings
+		document.write(theNames.sort() + "<br />"); // Sort will sort out the array items alphabetically
+
+	</script>
+
+</body>
+</html>

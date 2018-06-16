@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Cardo:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<script src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+// Window Scroll event
+ $(window).scroll(function()
+{
+    $('a[href^="#"]').on('click',function(e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1200, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+    // If the scroll amount is larger than the window height then show "Scroll To Top" link.
+    if ($(window).scrollTop() > $(window).height())
+    {
+        $('.navigation p').slideUp('slow'); // Show "Scroll To Top" link.
+        $('.navigation').animate('slow').backgroundColor('black');
+    }
+    else
+    {
+        $('.navigation p').slideDown('slow'); // Hide "Scroll To Top" link.
+        $('.navigation').animate('slow').backgroundColor('transparent');
+    }
+    $('.red-wine-colors a').click(function() {
+	  	// cn - jquery loops through the anchor tags and extracts the href value.
+	     var url=$(this).attr('href');
+	    // cn - the #newsItem section of the url is inserted into the #headlines div.
+	     $('.red-wine-colors').load(url + ' #newsItem');
+	     // cn - disable the default link behavior
+	     return false;
+	}); //end click
+});
+</script>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<p><img class="logo" src="img/logo.svg" width="300" height="120" alt="Oenophera"></p>
+			<ul class="main_nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#first">About us</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>			
+		</div><!-- Navigation -->
+		<header class="header fixed-img">
+			<div class="inner-container">
+				<h1 class="header-text text-center">Our Portfolio</h1>
+			</div><!-- Inner Container -->
+		</header>
+		<main id="portfolio" class="main">
+			<section class="section red">
+				<div class="inner-container">
+					<div class="half-col wine-picture">
+						<img src="img/red.jpg" alt="">
+						<ul class="red-wine-colors">
+							<li><a class="red-dark-btn active wine-btn" href="#"><div class="is-active"></div></a></li>
+							<li><a class="red-medium-btn wine-btn" href="red-description/red-medium.html"><div class="is-active"></div></a></li>
+							<li><a class="red-medium-light-btn wine-btn" href="#"><div class="is-active"></div></a></li>
+							<li><a class="red-light-btn wine-btn" href="#"><div class="is-active"></div></a></li>
+						</ul>
+					</div>
+					<div id="red-wine-selections" class="half-col wine-selections">
+						<article class="white-dark">
+							<h2>Our Catalog has Grown</h2>
+							<p>We take great pride in the reputation we are building 
+							as a distributor of the Minnesota’s best quality small-batch 
+							and craft beverage and alcohol brands.</p>
+						</article>
+					</div>
+				</div><!-- Inner Container -->
+			</section>
+			<section class="section white">
+				<div class="inner-container">
+					<div class="half-col wine-selections">
+						<article class="white-dark">
+							<h2>Our Catalog has Grown</h2>
+							<p>We take great pride in the reputation we are building 
+							as a distributor of the Minnesota’s best quality small-batch 
+							and craft beverage and alcohol brands.</p>
+						</article>
+						<article class="white-medium">
+							<h2>Our Catalog has Grown</h2>
+							<p>We take great pride in the reputation we are building 
+							as a distributor of the Minnesota’s best quality small-batch 
+							and craft beverage and alcohol brands.</p>
+						</article>
+						<article class="white-medium-light">
+							<h2>Our Catalog has Grown</h2>
+							<p>We take great pride in the reputation we are building 
+							as a distributor of the Minnesota’s best quality small-batch 
+							and craft beverage and alcohol brands.</p>
+						</article>
+						<article class="white-light">
+							<h2>Our Catalog has Grown</h2>
+							<p>We take great pride in the reputation we are building 
+							as a distributor of the Minnesota’s best quality small-batch 
+							and craft beverage and alcohol brands.</p>
+						</article>
+
+					</div>
+					<div class="half-col wine-picture">
+						<img src="img/red.jpg" alt="">
+						<ul class="white-wine-colors">
+							<li><a class="white-dark-btn wine-btn" href="#"><div class="is-active"></div></a></li>
+							<li><a class="white-medium-btn wine-btn" href="#"><!-- <div class="is-active"></div>--></a></li>
+							<li><a class="white-medium-light-btn wine-btn" href="#"><!-- <div class="is-active"></div>--></a></li>
+							<li><a class="white-light-btn wine-btn" href="#"><!-- <div class="is-active"></div>--></a></li>
+						</ul>
+					</div>
+				</div><!-- Inner Container -->
+			</section>
+		</main>
+		<footer id="third" class="section footer">
+				<div class="inner-container">
+				</div><!-- Inner Container -->
+		</footer>
+	</div> <!-- Container -->
+</body>
+</html>

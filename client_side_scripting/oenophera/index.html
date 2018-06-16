@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Home</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Cardo:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<p><img class="logo" src="img/logo.svg" width="300" height="120" alt="Oenophera"></p>
+			<ul class="main_nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#first">About us</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="#contact">Contact us</a></li>
+			</ul>			
+		</div><!-- Navigation -->
+		<header id="home" class="header fixed-img">
+			<div class="inner-container">
+				<h1 class="header-text text-center">A Minnesota Wine Distributor</h1>
+			</div><!-- Inner Container -->
+		</header>
+		<main class="main">
+			<section id="index-first" class="section first-section">
+				<div class="inner-container">
+					<div id="first" class="small-col">
+						<img src="img/wine-glass.png" width="100%" alt="">
+					</div><!-- Column 1 -->
+					<div class="large-col">
+						<article>
+							<h2>The Best Wine Brands</h2>
+							<p>Oenophera is a wine distributor in St. Paul, Minnesota that specializes in the finest small-batch, craft and specialty alcohol brands from the midwest and especially here in Minnesota. Oenophera represents more many brands from the farthest corners of Minnesota.</p>
+						</article>
+					</div><!-- Column 1 -->
+				</div><!-- Inner Container -->
+			</section>
+			<section id="index-second" class="section second-section">
+				<div class="inner-container">
+					<h2 class="text-center">Quality you can Trust</h2>
+					<div class="third-col">
+						<article>
+							<h3 class="text-center">Our Catalog has Grown</h3>
+							<p class="text-center">We take great pride in the reputation we are building 
+							as a distributor of the Minnesota’s best quality small-batch 
+							and craft beverage and alcohol brands.</p>
+						</article>
+					</div><!-- Third Column -->
+					<div class="third-col">
+						<article>
+							<h3 class="text-center">A Great Team</h3>
+							<p class="text-center">Each member of our team is fully dedicated to providing 
+							the best, most-knowledgeable advice and service to every 
+							customer and partner.</p>
+						</article>
+					</div><!-- Third Column -->
+					<div class="third-col">
+						<article>
+							<h3 class="text-center">Value and Dedication</h3>
+							<p class="text-center">We continue to add more value through the services 
+							we provide through the dedication and passion from our team.</p>
+						</article>
+					</div><!-- Third Column -->
+				</div><!-- Inner Container -->
+			</section>
+		</main>
+		<footer id="contact" class="section footer">
+			<div class="inner-container">
+				<div class="third-col">
+					
+				</div>
+				<div class="third-col">
+					
+				</div>
+			</div><!-- Inner Container -->
+		</footer>
+	</div> <!-- Container -->
+<script src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+// Window Scroll event.
+ $(window).scroll(function()
+{
+    // If the scroll amount is larger than the window height then show "Scroll To Top" link.
+    if ($(window).scrollTop() > $(window).height() / 3)
+    {
+        $('.navigation p').slideUp('slow'); // Show "Scroll To Top" link.
+    }
+    else
+    {
+        $('.navigation p').slideDown('slow'); // Hide "Scroll To Top" link.
+    }
+    // JavaScript Document
+
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1200, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+</body>
+</html>

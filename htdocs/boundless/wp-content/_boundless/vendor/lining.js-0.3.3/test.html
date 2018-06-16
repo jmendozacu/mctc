@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lining.js</title>
+    <link href='http://fonts.useso.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="assets/test.css" />
+</head>
+<body>
+<div class="main">
+    <p>
+        <input type="button" onclick="selectFirstLine()" value="select first line">
+        <input type="button" onclick="selectLastLine()" value="select last line">
+        <input type="button" onclick="extendLine()" value="extend line">
+        <input type="button" onclick="moveLine()" value="move line">
+    </p>
+    <h1>Lining.js</h1>
+
+    <div class="demo" id="demo" data-lining data-auto-resize data-from="1">
+        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br/>there live the blind texts.<br/> Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <div><p>A small river named Duden flows by their place and supplies it with the necessary regelialia. <img src="./assets/80x60.gif"/>It is a paradisematic country, <img style="vertical-align:-100px;" src="./assets/80x60.gif"/>in which roasted parts of sentences fly into your mouth.</p></div>
+        <ul>
+            <li>Even the all-powerful Pointing has no control about the <em> blind texts</em> — it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</li>
+            <li><em>The Big Oxmox</em> advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</li>
+        </ul>
+
+        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</P>
+    </div>
+
+
+    <script src="src/lining.js"></script>
+    <script>
+    function selectFirstLine() {
+        var lines = document.getElementsByTagName('line');
+        var lastLine = lines[0];
+        var s = window.getSelection();
+        var r = document.createRange();
+        r.selectNodeContents(lastLine);
+        s.removeAllRanges();
+        s.addRange(r);
+    }
+    function selectLastLine() {
+        var lines = document.getElementsByTagName('line');
+        var lastLine = lines[lines.length - 1];
+        var s = window.getSelection();
+        var r = document.createRange();
+        r.selectNodeContents(lastLine);
+        s.removeAllRanges();
+        s.addRange(r);
+    }
+
+    function extendLine() {
+        var s = window.getSelection();
+        s.modify('extend', 'backward', 'lineboundary');
+        s.modify('extend', 'forward', 'lineboundary');
+    }
+
+    function moveLine() {
+        var s = window.getSelection();
+        s.modify('move', 'forward', 'lineboundary');
+        s.modify('extend', 'forward', 'lineboundary');
+    }
+
+    var demo = document.getElementById('demo');
+    lining.util.on(demo, 'beforelining', function (e) {
+        var t = e.target;
+        // e.preventDefault();
+        console.log('beforelining: ' + (t.getAttribute('data-lining') === 'end'));
+    });
+    lining.util.on(demo, 'afterlining', function (e) {
+        var t = e.target;
+        console.log('afterlining: ' + (t.getAttribute('data-lining') === 'end'));
+    });
+    lining.util.on(demo, 'beforeunlining', function (e) {
+        var t = e.target;
+        console.log('beforeunlining: ' + (t.getAttribute('data-lining') === 'end'));
+    });
+    lining.util.on(demo, 'afterunlining', function (e) {
+        var t = e.target;
+        console.log('afterunlining: ' + (t.getAttribute('data-lining') === 'end'));
+    });
+    </script>
+</div>
+</body>
+</html>
+

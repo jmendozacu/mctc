@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Looping through an Array from Prompts</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		var namelist = new Array(4);
+		for (var i = 0; i < namelist.length; i++) {
+			namelist[i] = window.prompt("Please enter a name", "");
+		}
+		for (var i = 0; i < namelist.length; i++) {
+			document.write("Howdy " + namelist[i] + "<br>");
+		}
+		
+	</script>
+
+</body>
+</html>

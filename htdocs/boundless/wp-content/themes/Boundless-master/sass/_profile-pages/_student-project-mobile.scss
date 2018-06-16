@@ -1,0 +1,135 @@
+@media only screen and (max-width: 901px) {
+    .project {
+        @include grid-container();
+        height: auto;
+        margin-bottom: 10px;
+        h2#project-title {
+            max-width: 99%;
+            min-width: 99%;
+            margin-top: 0px;
+            min-height: 140px;
+            padding: 3% 2%;
+            background-position: top left;
+        }
+        .portfolio-item {
+            height: auto;
+            .project-description-container {
+                @include grid-column(12);
+                @include grid-shift(0);
+                height: auto;
+                font-size: 130%;
+                margin-top: 0;
+                font-weight: 500;
+                opacity: 1;
+                .description {
+                    padding: 0;
+                    font-weight: 400;
+                    color: $white;
+                }
+                .next {
+                    display: none
+                }
+            }
+            .project-image-container {
+                @include grid-column(12);
+                @include grid-shift(0);
+                margin-top: 50px;
+                float: right;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project-background {
+        background-color: $white;
+        height: 100vh;
+    }
+    .project {
+        background-color: $gray-background;
+        padding-top: 0;
+        height: auto;
+        h2#project-title {
+            max-width: 98%;
+            min-width: 98%;
+            position: absolute;
+            margin-top: 0;
+            min-height: 120px;
+            color: $white;
+            z-index: 100;
+            font-size: 270%;
+            padding: 2% 15% 0 2%;
+            background-image: url("images/B-Assets-Final/ribbon.svg");
+            background-position: top right;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .portfolio-item {
+            height: auto;
+            .project-description-container {
+                @include grid-column(12);
+                @include grid-shift(0);
+                font-size: 120%;
+                line-height: 1;
+                opacity: 1;
+                .description {
+                    padding: 0;
+                     font-weight: 400;
+                    color: $white;
+                }
+            }
+            .project-image-container {
+                margin: 30px auto;
+                height: 75vh;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .project {
+        margin-bottom: 0;
+        border-bottom: 10px solid white;
+        height: auto;
+        @include grid-container();
+        h2#project-title {
+            max-width: 98%;
+            min-width: 98%;
+            margin-top: 0px;
+            min-height: 120px;
+            z-index: 100;
+            font-size: 220%;
+            padding: 3% 25% 2% 4%;
+            background-image: url("images/B-Assets-Final/ribbon.svg");
+        }
+        .portfolio-item {
+            height: auto;
+            .project-description-container {
+                @include grid-column(12);
+                @include grid-shift(0);
+                opacity: 1;
+                .description {
+                    font-weight: 500;
+                    margin-top: 80%;
+                    padding-bottom: 20px;
+                    font-size: 80%;
+                    line-height: 1.1;
+                }
+            }
+            .project-image-container {
+                margin-top: 90px;
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 901px) {
+    .project-background {
+        height: 0;
+    }
+}

@@ -1,0 +1,29 @@
+
+<!—- header.php form -—> 
+
+<form method="get" action="search-results.php"  class="col-lg-offset-2 col-md-offset-1">
+<input type="text" id="usersearch" name="usersearch">
+<input type="submit" name="submit" value="Search">
+</form>
+
+
+<!—- item.php paging vars -—> 
+
+/* start paging vars */
+$usersearch = isset($_GET['usersearch']) ? $_GET['usersearch'] : null;
+$sort = isset($_GET['sort']) ? $_GET['sort'] : '';
+$page = isset($_GET['page']) ? $_GET['page'] : '';
+/* end paging vars*/	
+
+
+<!—- item.php buttons -—> 
+
+<?php if (isset($usersearch)) {
+
+		echo '<a class="btn btn-primary" href="search-results.php?usersearch=' . $usersearch . '&sort=' . $sort . '&page=' . $page .  '">back to search results</a>';
+	 } else {
+		echo '<a class="btn btn-primary" href="items.php?category_id=' . $product['categoryID'] . '">back to color ' . $product['categoryName'] . '</a>';
+	}?>
+
+
+

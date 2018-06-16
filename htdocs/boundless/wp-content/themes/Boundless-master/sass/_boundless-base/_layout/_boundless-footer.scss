@@ -1,0 +1,108 @@
+footer {
+  @include grid-container;
+  clear: both;
+  width: 100%;
+  background: $gray;
+  padding: 2rem;
+  position: relative;
+
+  z-index: 24;
+  font-family: $body-stack;
+  line-height: 2rem;
+  color: $darkGray;
+
+  .left {
+    @include grid-column(6);
+    margin: 0;
+
+    @media screen and (max-width: 767px) {
+      @include grid-column(12);
+      margin: 0;
+      text-align: left;
+    }
+
+  }
+  .right {
+    @include grid-column(6);
+    text-align: right;
+    float: right;
+
+    .copyright {
+      margin-top:20px;
+      font-size: .85rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      @include grid-column(12);
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  form {
+    input {
+      @include grid-column(4);
+      //max-width: 450px;
+      //display: block;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 2px;
+      border: none;
+      box-shadow: none;
+      background-color: $green;
+      font-family: $body-stack;
+      font-size: 1.2rem;
+      color: $black;
+      outline-color: #5abb9a;
+
+      @media screen and (max-width: 767px) {
+        @include grid-column(12);
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+      }
+
+    }
+    input::-webkit-input-placeholder {
+      color: $white !important;
+    }
+
+    input:-moz-placeholder { /* Firefox 18- */
+      color: $white !important;
+    }
+
+    input::-moz-placeholder {  /* Firefox 19+ */
+      color: $white !important;
+    }
+
+    input:-ms-input-placeholder {
+      color: $white !important;
+    }
+    textarea {
+      @extend input;
+      @include grid-column(12);
+      margin-left: 10px;
+
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+        width: 100%;
+      }
+
+    }
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 2px 8px;
+  }
+}

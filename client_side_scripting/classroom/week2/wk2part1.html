@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Week 2 Project Part 1</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var title = "Timber Wolf";
+	var img = "wolf.jpg";
+	var description = "The gray wolf or grey wolf is a species of canid native to the wilderness and remote areas of North America, Eurasia, and North Africa. It is the largest member of its family, with males averaging 43–45 kg (95–99 lb), and females 36–38.5 kg (79–85 lb).[3] It is similar in general appearance and proportions to a German shepherd,[4] or sled dog, but has a larger head, narrower chest, longer legs, straighter tail and bigger paws.[5] Its winter fur is long and bushy, and predominantly a mottled gray in colour, although nearly pure white, red, or brown to black also occur";
+	var s_name = "Scientific Name: Canis lupus";
+	var expectancy = "Life Expectancy: 10 years";
+	var isNative = "Native to North America: true";
+	
+	title = "<h1 style=\"color: gray; font-family: sans-serif;\">" +  title + "</h1>";
+	img ="<div><img src=\"" + img +  "\" alt=\"wolf\"><!-- photo by Matt Boulton --></div>";
+	description = "<p style=\"font-family: sans-serif;\">" + description + "</p>";
+	s_name = "<h2 style=\"color: gray; font-family: sans-serif;\">" + s_name + "</h2>";
+	expectancy = "<h2 style=\"color: gray; font-family: sans-serif;\">" + expectancy + "</h2>"
+	isNative = "<h2 style=\"color: gray; font-family: sans-serif;\">" + isNative + "</h2>"
+
+	document.write(title + img + description + s_name + expectancy + isNative);
+
+</script>
+
+</body>
+</html>

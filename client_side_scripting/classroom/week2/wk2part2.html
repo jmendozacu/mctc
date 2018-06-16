@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Week 2 Project Part 1</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var title = prompt("Please enter your favorite animal.");
+	var img = prompt("Please enter your favorite animal photo path.", "wolf.jpg");
+	var description = prompt("Please enter a description for a "  + title + ".");
+	var s_name = prompt("What is the scientific name of a " + title + "?");
+	var expectancy = prompt("What is the life expectancy of a " + title + "?");
+	var isNative = prompt("Is a " + title + " native to North America?");
+	
+	title = "<h1 style=\"color: gray; font-family: sans-serif;\">" +  title + "</h1>";
+	img ="<div><img src=\"" + img +  "\" alt=\"wolf\"><!-- photo by Matt Boulton --></div>";
+	description = "<p style=\"font-family: sans-serif;\">Description: " + description + "</p>";
+	s_name = "<h2 style=\"color: gray; font-family: sans-serif;\">Scientific Name: " + s_name + "</h2>";
+	expectancy = "<h2 style=\"color: gray; font-family: sans-serif;\">Life Expectancy: " + expectancy + "</h2>";
+	isNative = "<h2 style=\"color: gray; font-family: sans-serif;\">Native to North America: " + isNative + "</h2>";
+
+	document.write(title + img + description + s_name + expectancy + isNative);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+///////////////////////button styles/////////////////////
+	
+	
+
+
+
+	
+		 
+		.boundless-button:focus,
+		input[type="button"]:focus,
+		input[type="reset"]:focus,
+		input[type="submit"]:focus,
+		.boundless-button:hover,
+		input[type="button"]:hover,
+		input[type="reset"]:hover,
+		input[type="submit"]:hover {
+		background:$yellow;
+		
+		
+		}
+		
+		
+		.boundless-button:active,
+		input[type="button"]:active,
+		input[type="reset"]:active,
+		input[type="submit"]:active {
+		background:$green;
+
+
+
+
+		}
+		
+
+	button{
+	
+	}
+	
+	.boundless-button {
+	
+	border:0;
+	height:100px;
+	cursor: pointer;
+	background:$gray;
+	color:$white;
+	padding:0;
+	margin-bottom: 1em;
+	filter: drop-shadow($boundless-shadow);   //applies shadow elements including .svg
+	
+	
+	
+	@include grid-media($screen-small){
+	@include grid-column(12);
+	}
+	
+	@include grid-media($screen-medium){
+	@include grid-column(6);
+	}
+	
+	@include grid-media($screen-large){
+	@include grid-column(3);
+	}
+	
+	
+	}
+	
+	.boundless-button:hover{
+	filter: drop-shadow($boundless-shadow-hover); 
+	
+	}
+	
+	.boundless-button img{
+	width: 60%;
+	}
+
+
+
+		.boundless-button:focus,
+		input[type="button"]:focus,
+		input[type="reset"]:focus,
+		input[type="submit"]:focus,
+		.boundless-button:hover,
+		input[type="button"]:hover,
+		input[type="reset"]:hover,
+		input[type="submit"]:hover {
+		background:$yellow;
+		
+		
+		}
+		
+		
+		.boundless-button:active,
+		input[type="button"]:active,
+		input[type="reset"]:active,
+		input[type="submit"]:active {
+		background:$green;
+
+
+
+
+		}

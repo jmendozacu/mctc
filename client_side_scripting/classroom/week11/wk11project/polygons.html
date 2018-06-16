@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Polygons</title>
+</head>
+<style>
+.header {
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%, 0% 0%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-image: url('header-img1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0 20% 0;
+    background-color: red;
+    }
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+}
+</style>
+<body>
+	<header class="header">
+		<div class></div>
+	</header>
+</body>
+</html>

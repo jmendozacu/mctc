@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Switch Statements</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var d = new Date();
+		var theDay = d.getDay();
+
+		switch(theDay) {
+			case 0:
+			var today = "Sunday";
+			break;
+			case 1:
+			var today = "Monday";
+			break;
+			case 2:
+			var today = "Tuesday";
+			break;
+			case 3:
+			var today = "Wednesday";
+			break;
+			case 4:
+			var today = "Thursday";
+			break;
+			case 5:
+			var today = "Friday";
+			break;
+			case 6:
+			var today = "Saturday";
+			break;
+
+			default:
+			document.write("The world is ending! There is no day!");
+		}
+
+		document.write("Today is " + today);
+
+	</script>
+</body>
+</html>

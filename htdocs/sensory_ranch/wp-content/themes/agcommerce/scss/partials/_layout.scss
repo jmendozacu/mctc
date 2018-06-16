@@ -1,0 +1,57 @@
+.front-page-masthead {
+  padding: 10px 0 120px 0;
+  background-size: cover !important;
+  overflow: hidden;
+}
+.off-mobile {
+  @media screen and ( max-width: 480px ) {
+    display: none;
+  }
+  @media screen and ( min-width: 480px ) {
+    display: block;
+  }
+}
+.on-mobile {
+  display: none;
+  @media screen and ( max-width: 480px ) {
+    display: block;
+  }
+}
+.header-nav {
+  position: relative;
+  margin: 0 0 0 25%;
+  .menu-item {
+    margin: 0 .5rem;
+    position:relative;
+    text-align:left;
+  }
+}
+.side-nav {
+  margin: 0;
+  padding: 0;
+  .home-link, .userView, .menu-item {
+    margin: 0;
+  }
+  .home-link {
+    .userView {
+      padding: 100px 15px 25px;
+    }
+  }
+  .menu-item {
+    border-bottom: thin solid #ccc;
+    & a:hover {
+      background-color: mediumseagreen;
+      color: white;
+    }
+  }
+}
+.front-page-header {
+  color: white;
+  text-shadow: 0 0 5px black;
+  p {
+    font-size: 1.5rem;
+  }
+}
+#site-navigation {
+  background-color: #784f48;
+}

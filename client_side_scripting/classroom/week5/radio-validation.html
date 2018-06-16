@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Radio Button Validation</title>
+
+	<script type="text/javascript">
+		
+	function myFunction() {
+		// get a reference to the radio button list.
+		var sandwichlist = document.forms[0].sandwich;
+		var valid = false;
+
+		for (var i = 0; i < sandwichlist.length; i++) {
+			if(sandwichlist[i].checked === true) {
+				valid = true;
+			}
+		}
+		if (valid === true) {
+			return true;
+		}
+		else {
+			alert("Please tell us how to make your sandwich!");
+			return false;
+		}
+	}
+
+	</script>
+</head>
+<body>
+	
+	<p>How would you like your sandwich?</p>
+
+	<form action="validate.html" onsubmit="return myFunction();">
+		
+		<input type="radio" name="sandwich" id="un-toasted">Un-toasted
+		<input type="radio" name="sandwich" id="toasted">Toasted
+		<input type="radio" name="sandwich" id="fried">Fried
+		
+		<input type="submit" value="Make Sandwich">
+
+	</form>
+
+</body>
+</html>

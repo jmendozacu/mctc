@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>form demo css</title>
+
+
+<style type="text/css">
+
+fieldset {
+	width: 500px;
+}
+fieldset ul, fieldset li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+fieldset li {
+	margin: 0 0 10px 0;
+}
+fieldset label {
+	display: inline-block;
+	width: 150px;
+}
+label.radios {
+	display: inline;
+	width: 100%;
+}
+#lblnotes {
+	float: left;
+}
+</style>
+</head>
+
+<body>
+<fieldset>
+<legend>Sign-up Form</legend>
+<form id="signup" action="index.html" method="post">
+<ul>
+<li><label for="name">Name</label>
+<input type="text" name="name" id="name" size="30" />
+</li>
+<li><label for="email">Email</label>
+<input type="text" name="email" id="email" size="30" />
+</li>
+
+<li><label for="psw">Password</label>
+<input type="text" name="psw" id="psw" size="30" />
+</li>
+
+<li><label for="state">State</label>
+<select name="state" id="state">
+<option value="none">choose a state</option>
+<option value="MN">Minnesota</option>
+<option value="WI">Wisconsin</option>
+</select>
+</li>
+
+<li><label for="notes" id="lblnotes">Notes</label>
+<textarea name="notes" id="notes" cols="20" rows="5"></textarea>
+</li>
+
+<li><label>Subscription</label> 
+<label for="free" class="radios">Free</label>
+<input type="radio" name="subscription" id="free"/>
+
+<label for="paid" class="radios">Paid</label>
+<input type="radio" name="subscription" id="paid"/> 
+</li>
+
+<li>
+<label for="newsletter">Newsletter</label>
+<input type="checkbox" name="newsletter" id="newsletter"/>
+</li>
+
+<li><label for="submit">&nbsp;</label>
+<button type="submit" id="submit">Send</button> </li>
+</ul>
+</form>
+</fieldset>
+</body>
+</html>

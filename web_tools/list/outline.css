@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ********* GLOBAL ********** */
+
+/* * {
+	margin: 0px;
+	padding: 0px;
+} */
+html {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #CCC;
+}
+#wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+	background-image: url(images/bg.gif);
+	box-shadow: 0px 0px 15px #999;
+}
+
+/* ********* HEADER ********** */
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	background-image: url(images/brush.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+header #logo {
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+}
+nav {
+	color: white;
+	font-weight: 200;
+	text-decoration: none;
+	background-color: #6CAD67;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+nav ul {
+	list-style: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	padding: 0;
+}
+nav li {
+	display: inline;
+	padding: 20px;
+	font-size: 1.5em;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 21px;
+}
+nav a:hover {
+	background-color: #FFC500;
+	color: black;
+}
+nav a:visited: {
+	color: white;
+}
+#header-h1 {
+	text-align: center;
+	margin: 10px;
+	font-size: 18px;
+}
+#header-h3 {
+	text-align: center;
+	margin: 0;
+	padding: 5px 0 0 0;
+	font-size: 30px;
+}
+
+/* ********* MAIN ********** */
+
+main {
+	width: 800px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 10px 0 250px 0;
+	background-image: url(images/minneapolis.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+main ol {
+	margin: 30px 30px 0px 30px;
+}
+main h2 {
+	margin: 20px 0 0;
+}
+.goToTop,#summer,#fall,#winter,#spring,#anytime,h4 {
+	display: inline-block;
+	margin-right: 20px;
+}
+.goToTop {
+	text-decoration: none;
+	color: #6CAD67;
+}
+#mainImg {
+	display: block;
+	margin: 0 auto;
+}
+.contentImg {
+	margin: 30px auto 0;
+	display: block;
+}
+
+/* ********* FOOTER ********** */
+
+footer {
+	background-color: #6CAD67;
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+	padding: 0 0 5px;
+	border-top: thin solid white;
+	clear: both;
+}
+footer nav {
+	border-bottom: solid white thin;
+}
+footer p {
+	text-align: center;
+}

@@ -1,0 +1,72 @@
+/*
+ * MODAL
+------------------------------------------------------------ */
+
+/* The Modal (background) */
+.post-modal-behind {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.post-modal {
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin: 10% 15%;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 0 0 15px 0 black;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+.inactive-link {
+    pointer-events: none;
+}
+.active-link {
+    pointer-events: initial;
+}
+.modal-header {
+    border-bottom: thin solid gray;
+}
+.modal-title {
+    display: inline-block;
+}
+.modal-body {
+    clear: both;
+}
+.post-modal h3 {
+    margin: 10px 0;
+}
+/* The Close Button */
+.clearfix {
+    overflow: auto;
+}
+.close {
+    float: right;
+    color: #aaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: none;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .post-modal {
+        border-radius: 10px;
+        margin: 20% 2.5%;
+        width: 95%; /* Could be more or less, depending on screen size */
+    }
+}

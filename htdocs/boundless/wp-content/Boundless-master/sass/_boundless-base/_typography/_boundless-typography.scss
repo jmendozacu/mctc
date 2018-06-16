@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700');
+
+$heading-stack:  'Rajdhani', helvetica, sans-serif;
+$body-stack:  'Lato', arial, sans-serif;
+
+
+html{
+font-family: $body-stack;
+}
+
+
+
+
+//headings
+
+
+h1 { font-family: $heading-stack; font-weight: 700; font-size: 6rem; line-height: 1.2;  letter-spacing: 1;
+@include grid-media($screen-small){font-size: 4rem}
+@include grid-media($screen-large){font-size: 8rem}
+}
+
+h2 { font-family: $heading-stack; font-weight: 600; font-size: 5rem; line-height: 1.4; letter-spacing:  1; 
+@include grid-media($screen-small){font-size: 3.3rem}
+@include grid-media($screen-large){font-size: 7rem}
+}
+
+h3 { font-family: $heading-stack; font-weight: 500; font-size: 4rem; line-height: 1.3;  letter-spacing:  1;
+@include grid-media($screen-small){font-size: 2.8rem}
+@include grid-media($screen-large){font-size: 6rem}
+}
+
+h4 { font-family: $heading-stack; font-weight: 400; font-size: 3.3rem; line-height: 1.6; letter-spacing:  1;
+@include grid-media($screen-small){font-size: 2.2rem}
+@include grid-media($screen-large){font-size: 5rem}
+}
+h5 { font-family: $heading-stack; font-weight: 300; font-size: 2.6rem; line-height: 1.6;  letter-spacing:  1;
+@include grid-media($screen-small){font-size: 1.8rem}
+@include grid-media($screen-large){font-size: 3.5rem}
+}
+h6 { font-family: $heading-stack; font-weight: 200; font-size: 2rem; line-height: 2; letter-spacing:  1; 
+@include grid-media($screen-small){font-size: 1.4rem}
+@include grid-media($screen-large){font-size: 2.2rem}
+}
+
+
+
+
+
+code{
+
+	font-family: monospace;
+	margin: 10px;
+	padding: 2px;
+	@include grid-container;
+	color:$black;
+
+}
+
+
+
+p { font-family: $body-stack; font-size: 1rem; font-weight: 300; line-height: 1.2;  letter-spacing: 1; margin: .5em 0;}
+
+
+
+
+
+// CSS transition
+
+h1, h2, h3, h4, h5, h6, ul li, button{
+-webkit-transition:0.2s;
+-moz-transition:0.2s;
+-o-transition:0.2s;
+transition:0.2s;
+}		
+
+
+
+// change color of selected text in browser
+
+
+::-moz-selection { /* Code for Firefox */
+color: $white;
+background: $purple;
+}
+
+::selection {
+color: $white;
+background: $purple;
+}			
+
+						
+						

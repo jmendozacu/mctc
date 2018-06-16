@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>javascript form validation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="jquery_validate/jquery.validate.min.js"></script>
+<script src="jquery_validate/additional-methods.min.js"></script>
+<style type="text/css">
+	label.error 
+	{
+		color: red;
+		width: 300px;
+	}
+
+</style>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('#the_form').validate({
+		rules: {
+			zip: {
+				required: true,
+				zipcodeUS: true
+			},
+			phone: {
+				required: true,
+				phoneUS: true
+			},
+			email: {
+				required: true,
+				email: true	
+			}
+		},
+		messages: {
+			zip: {
+				required: "Please supply an e-mail address.",
+				zip: "This is not a valid Zip-Code."
+			},
+			phone: {
+				required: "Please supply a phone number.",
+				phone: "This is not a valid phone number"
+			},
+			email: {
+				required: "Please supply an email address",
+				email: "This is not a valid email address."
+			}
+		}, // end rules
+		errorPlacement: function(error, element) { 
+	    	if ( element.is(":radio") || element.is(":checkbox")) {
+	          error.appendTo( element.parent());  
+	          /*
+				CN - appendTo() adds HTML as the last child element of the selected element.
+				Here the element.parent() is the div where the radios and checkboxes are nested,
+				so the error is addes just before the </div>.
+	          */
+	        } else {
+	          error.insertAfter(element);
+	        } 
+	    }
+	});
+});
+
+</script>
+<!-- styles for form -->
+<style type="text/css">
+fieldset {width: 400px;}
+
+/* zero ul and li */
+fieldset ul, fieldset li{
+border:0; margin:0; padding:0; list-style-type:none;
+}
+/* li is a block level element. give margin bottom for spacing. */
+fieldset li
+{
+	margin-bottom: 10px;
+}
+
+/* label is a inline element. convert to inline block to prevent wrapping to next line but still apply width. */
+fieldset label{
+width:140px;
+display: inline-block;
+}
+
+/* set radio button labels back to default */
+label.fullwidth
+{
+width:100%;
+display: inline;
+}
+
+/* take lblnotes out of document flow, aligns to top */
+#lblnotes {float: left;}
+
+</style>
+</head>
+
+<body>
+<fieldset>
+<legend>Sign-up Form</legend>
+<form id="the_form" name="the_form" action="FormProcessor.html" method="get" onsubmit="return checkme();">
+<ul>
+<li><label for="myname">Name</label>
+<input type="text" name="myname" id="myname" size="30" class="required" title="please enter your name." required />
+</li>
+<li><label for="address">Street Address</label>
+<input type="text" name="address" id="address" size="30" class="required" title="Please enter a street address." required />
+</li>
+<li><label for="city">City</label>
+<input type="text" name="city" id="city" size="30" class="required" title="Please enter a city." required />
+</li>
+<li><label for="state" required >State</label>
+<select name="state" id="state" class="required" title="Please choose a state.">
+<option value="">choose a state</option>
+<option value="MN">Minnesota</option>
+<option value="WI">Wisconsin</option>
+</select>
+</li>
+<li><label for="zip" required >Zip</label>
+<input type="text" name="zip" id="zip" size="30" />
+</li>
+<li><label for="phone" required >Phone Number</label>
+<input type="text" name="phone" id="phone" size="30" />
+</li>
+<li><label for="email" required >Email</label>
+<input type="text" name="email" id="email" size="30" />
+</li>
+
+<li><label for="comments" id="lblnotes">Commments</label>
+<textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+</li>
+
+<li>
+<label for="info" class="fullwidth">Would you like information about our activites?</label>
+<input type="checkbox" name="info" id="info">
+</li>
+
+<li id="activities">
+<label>Activities</label>
+<label for="skiing" class="fullwidth">skiing</label>
+<input type="checkbox" name="skiing" id="skiing">
+<label for="sledding" class="fullwidth">sledding</label>
+<input type="checkbox" name="sledding" id="sledding">
+<label for="fishing" class="fullwidth">fishing</label>
+<input type="checkbox" name="fishing" id="fishing">
+</li>
+
+<li><label for="submit">&nbsp;</label>
+<button type="submit" id="submit">Send</button> </li>
+</ul>
+</form>
+</fieldset>
+
+</body>
+</html>

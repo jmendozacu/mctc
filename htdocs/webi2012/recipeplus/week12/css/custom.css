@@ -1,0 +1,31 @@
+/* global styles */
+
+.search {
+    margin-top: 20px;
+}
+#wrapper {margin-top: 20px;}
+
+aside div, aside p {margin-top: 20px;}
+
+nav {margin: 29px 30px 0 15px; font-weight: bold; font-size: 110%; color: #750f0f;}
+
+nav li {list-style-type: none; display: inline-block;}
+
+h1 {color: #750f0f; margin-top: -10px; font-size: 1.5em;}
+
+
+
+.margin-left-10 {margin: 0 30px 0 10px;}
+
+footer {font-size: 90%; margin: 30px 0;}
+
+/* mats.html styles */
+div.mats {margin-top: 10px; min-height: 125px;}
+hr {margin-top: 10px;}
+div.mats img {float: right;}
+
+/* mat.html styles */
+div.mat img {float: right;}
+div.mat {margin-top: 10px; min-height: 200px;}
+
+#address {margin-top: 15px;}

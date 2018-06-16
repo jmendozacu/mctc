@@ -1,0 +1,304 @@
+@mixin skew($side: right, $deg: -20deg, $right: -15px, $left: -15px, $width: 30px, $bg: #fff) {
+  position: relative;
+
+  &:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    @if $side == right {
+      right: $right;
+    } @else if $side == left {
+      left: $left;
+    }
+
+    display: block;
+    width: $width;
+    background: $bg;
+    -webkit-transform: skew($deg);
+    -ms-transform: skew($deg);
+    transform: skew($deg);
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+}
+
+.right-skew {
+  @include skew($side: right, $bg: $gray, $deg: 20deg, $right: -20px, $width: 100%);
+}
+
+.right-skew:hover {
+  @include skew($side: right, $bg: $yellow, $deg: 20deg, $right: -20px, $width: 100%);
+
+}
+
+.left-skew {
+  @include skew($side: left, $bg: $gray, $deg: -20deg, $left: -20px, $width: 100%);
+}
+
+.left-skew:hover {
+  @include skew($side: left, $bg: $yellow, $deg: -20deg, $left: -20px, $width: 100%);
+}
+
+// .center-skew {
+//     @include skew($side: right, $bg: $gray, $deg: 20deg, $right: 25px, $width: 95%);
+//     @include skew($side: left, $bg: $red, $deg: 20deg, $right: 25px, $width: 95%);
+// }
+
+#template-students-wrapper {
+
+  background-image: url("images/B-Assets-Final/BoundlessPattern-2.svg");
+  background-position: top;
+  background-repeat: repeat-y;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 140%;
+  height: 100%;
+  width: 100%;
+  float: left;
+  padding-top: 120px;
+  position: relative;
+  @media(max-width: 767px){
+    background-size: 200%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .5);
+    z-index:0;
+  }
+}
+
+// navigation sections //
+section.profiles-navigation,
+section.profiles-filter,
+section.image-grid {
+
+  //background: $white;
+  border: 0;
+
+}
+
+// top tier navigation section //
+section.profiles-navigation {
+  height: 105px;
+  margin: 1%;
+  @include grid-column(12);
+
+  @media (max-width: 960px) {
+    height: 75px;
+  }
+  a img {
+
+    float: left;
+    @include grid-column(4);
+    @media (max-width: 960px) {
+
+      @media (max-width: 560px) {
+        display: none;
+
+      }
+
+    }
+
+    @media (max-width: 460px) {
+      @include grid-column(8);
+      @include grid-shift(2);
+    }
+  }
+  ul {
+    margin-top: 2%;
+    float: right;
+    @include grid-column(8);
+    @include grid-shift();
+    li {
+      @include grid-column(2.5);
+      @include grid-shift(5);
+      text-align: center;
+      font-weight: 700;
+      color: $gray;
+      background: none;
+      filter: none;
+
+      @media (max-width: 960px) {
+        @include grid-shift(1);
+
+        @include grid-column(4);
+      }
+
+      @media (max-width: 460px) {
+        display: none;
+      }
+    }
+  }
+}
+
+// second tier navigation section
+section.profiles-filter {
+  z-index:1;
+  @include grid-container;
+
+  height: 100px;
+  .boundless-button {
+
+    h2 {
+      @media (max-width: 960px) {
+        font-size: 2rem;
+        line-height: 3;
+      }
+      @media only screen and (min-width: 961px) and (min-width: 970px) {
+        font-size: 3.3rem;
+        line-height: 2;
+      }
+    }
+  }
+
+  .boundless-button:active {
+
+    background: $red;
+    color: $black;
+
+  }
+  .boundless-button:nth-child(1) {
+    @include grid-column(4);
+    text-align: center;
+    @include grid-shift(0);
+    h2 {
+      //line-height: 2;
+    }
+
+  }
+  .boundless-button:nth-child(3) {
+    @include grid-column(4);
+    @include grid-shift(0);
+    text-align: center;
+
+    h2 {
+      //line-height: 2;
+    }
+
+  }
+  .center-skew {
+    position: absolute;
+    text-align: center;
+    height: 100px;
+    @include grid-column(4);
+    @include grid-shift(0);
+    h2 {
+      line-height: 2;
+      cursor: pointer;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        background-color: $red;
+        left: -21px;
+        z-index: -1;
+        height: 0px;
+        -webkit-transition: height .3s ease;
+        -moz-transition: height .3s ease;
+        -ms-transition: height .3s ease;
+        -o-transition: height .3s ease;
+        transition: height .3s ease;
+      }
+      &:hover {
+        &:after {
+          content: '';
+          width: calc(100% + 40px);
+          position: absolute;
+          bottom: 0px;
+          background-color: $red;
+          height: 100%;
+          left: -21px;
+          z-index: -1;
+          -webkit-transition: height .3s ease;
+          -moz-transition: height .3s ease;
+          -ms-transition: height .3s ease;
+          -o-transition: height .3s ease;
+          transition: height .3s ease;
+        }
+      }
+      @media only screen and (max-width: 659px) {
+        line-height: 1.1;
+        font-size: 2.5rem;
+      }
+      @media only screen and (min-width: 660px) and (max-width: 924px) {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      @media only screen and (min-width: 925px) and (min-width: 970px) {
+        font-size: 3.3rem;
+        line-height: 2;
+      }
+    }
+
+  }
+
+}
+
+//  image grid //
+section.image-grid {
+
+  margin: 60px auto;
+  height: auto;
+  z-index:1;
+  @media (min-width: 760px) {
+    @include grid-column(10);
+    @include grid-shift(1);
+  }
+  ul {
+    //background-color: rgba(255, 255, 255, .5);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .image-container {
+    margin-bottom: 1em;
+    @include grid-column(3);
+    @media (max-width: 960px) {
+      @include grid-column(4);
+    }
+    @media (max-width: 460px) {
+      @include grid-column(6);
+    }
+    a img {
+      box-shadow: $boundless-shadow;
+      width: 100%;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;;
+    }
+    a img:hover {
+      box-shadow: $boundless-shadow-hover;
+    }
+  }
+  h6 {
+    text-align: center;
+    @include grid-column(12);
+    box-shadow: 0;
+    bottom: 0;
+    padding-top: 5px;
+    line-height: 1.2;
+    @media (max-width: 960px) {
+      font-size: 120%;
+    }
+    @media (max-width: 460px) {
+      font-size: 100%;
+    }
+  }
+}
+
+

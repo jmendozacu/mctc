@@ -1,0 +1,32 @@
+/*
+Theme Name: Boundless
+Authors: Keisha Bien, Alex Carlson, Matthew Howe, Mai Xiong, Jesse Wollin, Alison Budny, Rebecca Power, Rachel Holtz, Jake Schlichting, Noah Marrow
+Description: Custom Wordpress Theme for the Boundless Design Show for graduating Minneapolis Community and Technical College students.
+*/
+
+//imports the default framework settings, no need to edit these files
+//@import "_bourbon-and-neat/bourbon-and-neat";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+// base boundless styles go here //
+@import "_boundless-base/boundless-base";
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// user and page specific scss files go here. use semantic naming convention (ie. _boundless-home-page.scss)
+// set up your project to compile to ../style.css to maintain WordPress stylesheet filepath
+
+// DEMO PAGE  > demo.html //
+
+//imports demo.html settings
+@import "_demo/demo";
+
+//imports the boundless color palette and gradient demos
+@import "_demo/color-demo";
+@import "_boundless-base/_vendor/settings.scss";
+@import "_boundless-base/_vendor/snazzy-info-window.scss";
+@import "_boundless-base/_custom.scss";

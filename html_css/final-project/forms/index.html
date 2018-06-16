@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<script type="text/javascript">
+
+	function addPerson() {
+		document.getElemenetById("form-name").value = "Jesse";
+	}
+
+	</script>
+</head>
+<body>
+	
+	<form action="FormProcessor.html" id="form-stuff" name="form-stuff" method="get">
+		
+		<label for="form-stuff">Name:</label>
+		<input type="text" id="form-name" name="form-name" size="30" required>
+		<br />
+		<label for="form-stuff">Password:</label>
+		<input type="password" id="form-pw" name="form-pw" size="30" required>
+		<br />
+		<label for="form-state">State:</label>
+		<select name="form-state" id="form-state" multiple="multiple" size="2">
+			<option value="Minnesota">Minnesota</option>
+			<option value="Wisconsin">Wisconsin</option>
+			<option value="Iowa">Iowa</option>
+		</select>
+		<br />
+		<label for="form-zip">Name:</label>
+		<input type="text" id="form-zip" name="form-zip" size="30" required pattern="\D{5}([\-]\D{4})?" title="Must be in format xxxxx or xxxxx-xxxx">
+		<br />
+		Cat <input type="radio" name="pet" id="cat">
+		Dog <input type="radio" name="pet" id="dog">
+
+		Dog Owner? <input type="checkbox" name="owner" id="owner" value="yes">
+		<input type="file" name="my-image" id="my-image">
+		<input type="button" value="Add" name="add-button" id="add-button" onclick="addPerson()">
+		<input type="submit" value="Go!">
+	</form>
+
+</body>
+</html>

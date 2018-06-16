@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+///// drop shadows  ////
+
+
+$boundless-shadow:  0px .5px .5px $black; 
+$boundless-shadow-hover:  0px 1.5px 1.5px $black; 
+
+
+///// gradients  ////
+
+
+@mixin boundless-gradient-yellow {
+  background-image: -webkit-linear-gradient(bottom, $yellow, $blue, $green);
+  background-image:  	          linear-gradient( top,  $yellow, $blue,  $green);
+
+}	
+
+
+
+

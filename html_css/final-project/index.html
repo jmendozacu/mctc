@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Map</title>
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+<script src="scripts/jquery-1.11.3.min.js"></script>
+<script src="scripts/map.js" type="text/javascript"></script>
+<script src="scripts/header.js" type="text/javascript"></script>
+<script src="scripts/gradient.js" type="text/javascript"></script>
+<!-- <script src="scripts/slideout-menu.js" type="text/javascript"></script> -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/global.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/slideout-menu.css">
+<link rel="stylesheet" href="styles/mobile.css">
+
+</head>
+
+<body>
+
+        <div id="nav-toggle"></div>
+
+        <nav id="main-nav">
+            
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Lakes</a></li>
+                <li><a href="">Streets</a></li>
+                <li><a href="">Places</a></li>
+            </ul>
+
+        </nav>
+        <header>
+        
+            <section class="banner">
+                
+                <ul id="header-icon-list">
+                    <li class="header-icon-left" class="header-icon"><i class="fa fa-bicycle fa-3x"></i></li>
+                    <li class="header-icon-right" class="header-icon"><i class="fa fa-cutlery fa-3x"></i></li>
+                    <li id="header-logo-center"><img src="images/uptown-logo.png" Alt="Uptown Minneapolis" id="logo" width="417"></li>
+                    <li class="header-icon-left" class="header-icon"><i class="fa fa-coffee fa-3x"></i></li>
+                    <li class="header-icon-right" class="header-icon"><i class="fa fa-beer fa-3x"></i></li>
+                </ul>
+            
+                <h2>Nested South of Downtown and East of the Lakes.</h2>
+            
+                <h3>Look no further for a day of sailing on Lake of the Isles or Lake Calhoun, sit down for a Latte one of many Cafe’s or stroll through the halls of the Minneapolis Institute of the Arts. The Uptown region offers an arrangement of culture, events and a locations. </h3>
+            
+            </section>
+        
+        </header>
+
+	<div id="container">
+        
+        <main>
+
+            <!-- <div class="slideout-button">
+
+                 <a href="#" id="bars" class="slideout-menu-toggle"><i class="fa fa-bars fa-2x"></i></a>
+                
+            </div> -->
+
+        	<aside class="slideout-menu">
+
+                <nav class="slideout-nav">
+                
+                    <ul>
+                        <li class="slideout-item"><a href="#">Lake Calhoun</a>
+                            <ul class="slideout-item-content">
+                                <li id="calhoun">
+
+                                <h3>Lake Calhoun (Mde Maka Ska or Bde Maka Ska)</h3>
+
+                                <p>The largest lake in Minneapolis, Minnesota, and part of the city's Chain of Lakes. Surrounded by city park land and circled by bike and walking trails, it is popular for many outdoor activities. The lake has an area of 401 acres (1.62 km2) and a maximum depth of 87 feet (27 m).</p>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slideout-item"><a href="#">Cedar Lake</a>
+                            <ul class="slideout-item-content">
+                                <li id="calhoun">
+
+                                <h3>Lake Calhoun (Mde Maka Ska or Bde Maka Ska)</h3>
+
+                                <p>The largest lake in Minneapolis, Minnesota, and part of the city's Chain of Lakes. Surrounded by city park land and circled by bike and walking trails, it is popular for many outdoor activities. The lake has an area of 401 acres (1.62 km2) and a maximum depth of 87 feet (27 m).</p>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="slideout-item"><a href="">Lake Harriet</a>
+                            <ul class="slideout-item-content">
+                                <li id="calhoun">
+
+                                <h3>Lake Calhoun (Mde Maka Ska or Bde Maka Ska)</h3>
+
+                                <p>The largest lake in Minneapolis, Minnesota, and part of the city's Chain of Lakes. Surrounded by city park land and circled by bike and walking trails, it is popular for many outdoor activities. The lake has an area of 401 acres (1.62 km2) and a maximum depth of 87 feet (27 m).</p>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="slideout-item"><a href="">Lake of the Isles</a>
+                            <ul class="slideout-item-content">
+                                <li id="calhoun">
+
+                                <h3>Lake Calhoun (Mde Maka Ska or Bde Maka Ska)</h3>
+
+                                <p>The largest lake in Minneapolis, Minnesota, and part of the city's Chain of Lakes. Surrounded by city park land and circled by bike and walking trails, it is popular for many outdoor activities. The lake has an area of 401 acres (1.62 km2) and a maximum depth of 87 feet (27 m).</p>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </nav> 
+                    
+            <!--    <section class="slideout-bottom">
+        
+                <h3>Lake Calhoun (Mde Maka Ska or Bde Maka Ska)</h3> 
+
+                <p>The largest lake in Minneapolis, Minnesota, and part of the city's Chain of Lakes. Surrounded by city park land and circled by bike and walking trails, it is popular for many outdoor activities. The lake has an area of 401 acres (1.62 km2) and a maximum depth of 87 feet (27 m).</p>
+        
+                </section> -->
+
+            </aside>
+
+
+            <aside id="map">
+                       
+            
+           	</aside>
+
+        </section>
+        
+        <section id="content">
+        <h2>Hennepin</h2>
+        
+        <p>For sections south of the Mississippi River, Hennepin Avenue follows stretches of an old Indian trail from Saint Anthony Falls to Lake Calhoun. It was named after Father Louis Hennepin, a Roman Catholic priest and explorer of the interior of North America. It is one of the oldest streets in the city and was the first street to cross the Mississippi River, when the first Hennepin Avenue suspension bridge was completed in 1855.</p>
+    
+    	<p>Many important institutions and structures have been built on Hennepin, including Calhoun Square, the Suburban World Theater, the Uptown Theater, the Walker Art Center, the Basilica of St. Mary, St. Mark's Episcopal Cathedral, Hennepin Avenue United Methodist Church, Minneapolis Community and Technical College, Minneapolis Central Library, the Lumber Exchange Building and the Federal Reserve Bank of Minneapolis.</p>
+    
+        <h2>Lyndale Avenue</h2>
+        
+       	<p>Lyndale Avenue takes its name from Lyndale farm, a 1,400-acre farm owned by Hon. William S. King. The name of the farm was in honor of Mr. King's father, Rev. Lyndon King, an itinerant Methodist minister of northern New York, who was named for Josiah Lyndon, colonial governor of Rhode Island in 1768-1769.</p>
+        
+        <h2>Franklin Avenue</h2>
+        
+        <p>Franklin Avenue, the hub of The American Indian Cultural Corridor, is just minutes from downtown Minneapolis. Here, you will find the unique flavor of our Native heritage with: galleries housing some of the finest Native American art, a Native American art gift shop where you can buy exquisite turquoise jewelry, wild rice and much more, coffee shops, an award winning restaurant serving breakfast and lunch. And an artisan bakery with fine breads and desserts</p>
+        
+        <h2>Lake Street</h2>
+        
+        <p>Lake Street is a major east-west thoroughfare in Minneapolis, Minnesota which is located between 29th and 31st Streets in south Minneapolis. It was named such because it runs through the Chain of Lakes area on the west side of town and passes over a small channel linking Lake Calhoun and Lake of the Isles.</p>
+        
+        </section>
+        
+        <section class="banner">
+        
+        
+        </section>
+        
+    	</main>
+
+	</div>
+
+        <footer>
+        
+            <section id="footer-top">
+            
+            
+            
+            </section>
+            <section id="footer-bottom">
+            
+                <h5>HTML/CSS Webi1611 | &copy; Jesse Wollin Final Project</h5>
+                
+                <h5>Minneapolis Community &amp; Technical College </h5>
+            
+            </section>
+        
+        </footer>
+</body>
+</html>

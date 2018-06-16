@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		/*
+			Javascript math order of operations.
+
+			1. Multiplication and division are preformed left to right.
+			2. Then addition and subtraction.
+			3. Operations in parentheses are always performed first.
+
+		*/
+
+		var num1 = 6 + 7; // = 13
+
+		document.write(num1 + "<br />");
+
+		var num2 = 6 + 7 * 3; // = 21 + 6 = 27
+
+		document.write(num2 + "<br />");
+
+		var num3 = 4 / 2 + 8 * 3; // 2 + 24 = 26
+
+		document.write(num3 + "<br />");
+
+		var num4 = (4 / 2 + 8) * 3; // 10 * 3 = 30
+
+		document.write(num4 + "<br />");
+
+		var num5 = prompt("please enter a number.");
+
+		document.write(num5 + "<br />");
+
+		var num6 = prompt("please enter another number.");
+
+		document.write(num6 + num5 + "<br />");
+
+		// convert vars to data type number 
+
+		document.write(Number(num6) + Number(num5) + "<br />");
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+.profile-page-mobile {
+  height: 100vh;
+  background-image: url("images/B-Assets-Final/BoundlessPattern-cropped-faded.svg");
+  background-position: top left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: $gray-background;
+
+  .image {
+    @include grid-column(12);
+    @include grid-shift(0);
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+
+    .name {
+
+      @include grid-column(12);
+      @include grid-shift(0);
+      position: absolute;
+      margin-top: -230px;
+
+      h1, h3 {
+        color: $white;
+        a {
+          color: $green;
+          -webkit-transition: all .3s ease;
+          -moz-transition: all .3s ease;
+          -ms-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        h1 {
+
+          font-size: 300%;
+
+        }
+      }
+
+    }
+
+    img {
+      width: 100%;
+
+    }
+  }
+  .profile-description {
+    @include grid-column(12);
+    margin: 0;
+    width: 100%;
+    padding: 0 5% 6%;
+    color: $black;
+    background: $white;
+    background-image: url("images/B-Assets-Final/BoundlessPattern-cropped-faded.svg");
+    background-position: bottom right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: 500;
+    font-size: 120%;
+    border-top: 10px $blue solid;
+    border-bottom: 10px $blue solid;
+  }
+}
+
+@media only screen and (min-width: 902px) {
+  .profile-page-mobile {
+    display: none;
+  }
+}

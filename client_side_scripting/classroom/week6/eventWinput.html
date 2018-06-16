@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Functions</title>
+
+	<script type="text/javascript">
+
+		function myAdder(num1,num2) {
+			num1 = Number(num1);
+			num2 = Number(num2);
+			if (isNaN(num1 + num2)) {
+				window.alert("Please enter an actual number!");
+			}
+			else {
+				var num3 = num1 + num2;
+				document.getElementById("num_three").value = num3.toFixed(2);
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<form>
+		<input type="text" id="num_one" size="4"> +
+		<input type="text" id="num_two" size="4"> =
+		<input type="text" id="num_three" size="4">
+		<input type="button" value="Add" onclick='myAdder(document.getElementById("num_one").value,document.getElementById("num_two").value);'>
+	</form>
+</body>
+</html>

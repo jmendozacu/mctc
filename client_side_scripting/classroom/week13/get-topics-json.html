@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#getdata").click(function(){
+        // cn - getJSON() takes JSON data and converts it to a javascript object
+        $.getJSON("get-json-data.js", function(jsonData){
+            // cn - loop through all objects in the jsonData
+            $.each(jsonData, function(object, value){
+                // object refers to each of the objects in jsonData
+                // value refers to the values in each object
+                $("div").append(value.name + " " + value.favorites + "<br>"); 
+            });
+        });
+    });
+
+    $("#cleardata").click(function(){
+       $( "div" ).empty();
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="getdata">Get JSON data</button>
+<button id="cleardata">Clear JSON data</button>
+
+<div></div>
+<img src="friends.jpg" width="250">
+</body>
+</html>

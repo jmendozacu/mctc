@@ -1,0 +1,46 @@
+@import "boundless-html-body.scss";
+@import "boundless-footer.scss";
+
+// standard elements
+blockquote {
+  color: teal;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.welcome {
+}
+/*
+// custom classes
+.welcome {
+  article {
+    @include grid-column(12);
+    @include grid-shift(-2);
+    float: right;
+  }
+}
+
+.portfolio {
+  article {
+    @include grid-column(3);
+    @include grid-shift(5);
+    z-index: 10;
+    position: absolute;
+    background: green;
+  }
+
+  .web, .print {
+    @include boundless-column(6);
+    height: inherit;
+  }
+  
+  .web {
+    background: url("../images/Background_6-01.jpg") center;
+    background-size: cover;
+  }
+  .print {
+    background: url("../images/Background_40-01.jpg") center;
+    background-size: cover;
+  }
+}
+*/

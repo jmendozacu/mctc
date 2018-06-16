@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery demo</title>
+<style type="text/css">
+#div1
+{
+	background: blue;
+	width: 300px;
+	height: 150px;
+}
+.border {
+	border: 3px solid black;
+}
+img {
+	float: left;
+}
+</style>
+<script src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+// Shows and Hides div1
+	$('#one').click(function() {
+		// alert("Harro!");
+		// $('#div1').fadeOut(3000);
+		// $('#div1').slideUp(500);
+		// $('#div1').hide(500);
+		$('#div1').toggleClass('border');
+	});
+	$('#two').click(function() {
+		// alert("Harro!");
+		// $('#div1').fadeIn(3000);
+		// $('#div1').slideDown(500);
+		// $('#div1').show(500);
+	});
+	// list of object literals
+	var letterA = {imgx: 'lg_a.gif', altx: 'a'};
+	var letterB = {imgx: 'lg_b.gif', altx: 'b'};
+	var letterC = {imgx: 'lg_c.gif', altx: 'c'};
+	var letterD = {imgx: 'lg_d.gif', altx: 'd'};
+
+	$('#ltrA').bind('click',letterA,showImage);
+	$('#ltrB').bind('dblclick',letterB,showImage);
+	$('#ltrC').bind('mouseover',letterC,showImage);
+	$('#ltrD').bind('mouseout',letterD,showImage);
+
+	var theimg = '';
+	// evt
+	function showImage(evt) {
+		theimg = '<img src="images/' + evt.data.imgx + '" alt="' + evt.data.altx + '">';
+		$(theimg).appendTo($('#div2'));
+	}
+	$('#clear_all').click(function() {
+		$('#div2').empty();
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+<div id="div1"></div>
+<div><a href="#" id="one">Click 1</a></div>
+<div><a href="#" id="two">Click 2</a></div>
+
+<form>
+	<input type="button" id="ltrA" value="Show Letter A">
+	<input type="button" id="ltrB" value="Show Letter B">
+	<input type="button" id="ltrC" value="Show Letter C">
+	<input type="button" id="ltrD" value="Show Letter D">
+	<input type="button" id="clear_all" value="Clear All">
+</form>
+
+<div id="div2"></div>
+
+
+
+
+</body>
+</html>

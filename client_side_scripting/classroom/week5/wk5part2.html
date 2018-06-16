@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+
+			var team = prompt("What is your favorite sports team?");
+			var scores = new Array(5);
+			var opponents = new Array(5);
+			var sequence = "1st";
+			var sequenceCount = 0;
+			var week = 1;
+			document.write("<h1>My favorite sports team: " + team + "</h1>");
+			
+			for (var i = 0; i < scores.length; i++) {
+				if (sequenceCount == 0) {
+					sequence = "1st";
+				}
+				else if (sequenceCount == 1) {
+					sequence = "2nd";
+				}				
+				else if (sequenceCount == 2) {
+					sequence = "3rd";
+				}
+				else if (sequenceCount == 3) {
+					sequence = "4th";
+				}
+				else if (sequenceCount == 4) {
+					sequence = "5th";
+				}
+				opponents[i] = window.prompt("Who was the " + team + " " + sequence + " opponent?", "");
+				scores[i] = window.prompt("What were their scores and did your team win or lose?", "");
+
+				sequenceCount++;
+			}
+			for (var i = 0; i < scores.length; i++) {
+				document.write("<b>Week " + week + " Opponent: </b> " + opponents[i] + " <b> Scores:</b> " + scores[i] + "<br><br>");
+				week++;
+			}	
+			document.write("Week: " + opponents.length);
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- 
+			var opponent = prompt("You're favorite team's 2nd Opponent.");
+			var score = prompt("What were their scores and did your team win or lose?");
+
+			var opponent = prompt("You're favorite team's 3rd Opponent.");
+			var score = prompt("What were their scores and did your team win or lose?");
+
+			var opponent = prompt("You're favorite team's 4th Opponent.");
+			var score = prompt("What were their scores and did your team win or lose?");
+
+			var opponent = prompt("You're favorite team's 5th Opponent.");
+			var score = prompt("What were their scores and did your team win or lose?"); 
+-->

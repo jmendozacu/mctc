@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* *********** GLOBAL *********** */
+
+body, html, * {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 100%;
+}
+
+/* *********** HEADER *********** */
+
+#nav-toggle {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: white;
+	border: thin solid #CCC;
+	z-index: 200;
+}
+#main-nav {
+	clear: both;
+	width: 100%;
+	height: 50px;
+	display: none;
+	background-color: white;
+	border-bottom: thin solid #CCC;
+	text-align: center;
+}
+#main-nav ul {
+	color: white;
+	display: inline;
+	list-style-type: none;
+	font-size: 0;
+}
+#main-nav ul li {
+	font-size: 14px;
+	display: inline-block;
+	padding: 17px 2.5%;
+	margin: 0;
+	width: 50px;
+}
+#main-nav ul li a {
+	text-decoration: none;
+	padding: 17px 2.5%;
+}
+#main-nav ul li a:link {
+	color: #74D1F6;
+}
+#main-nav ul li a:visited {
+	color: #74D1F6;
+}
+#main-nav ul li a:hover {
+	color: orange;
+	padding: 17px 2.5%;
+}
+header {
+	width: 100%;
+	position: relative;
+	z-index: 150;
+	clear: both;
+}
+header .banner {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: #CCC;
+}
+header .banner ul {
+	margin: 25px 0;
+	width: 100%;
+}
+header .banner ul li {
+	display: inline-block;
+	vertical-align: middle;
+	color: #74D1F6;
+	margin: 0 50px;
+}
+header .banner ul li .header-icon {
+	width: 50px;
+}
+
+/* ~~~~ CHANGE ICON POSITIONS ~~~~ */
+
+@media screen and (max-width: 1131px) {
+	
+	header .banner ul .header-icon-left {
+		margin: 0 4.1666% 0 25%;
+	}
+	header .banner ul #header-logo-center {
+		margin: 0 32.625%;
+	}
+	header .banner ul .header-icon-right {
+		margin: 0 25% 0 4.1666%;
+	}
+}
+
+/* ~~~~ CHANGE ICON POSITIONS ~~~~ */
+
+header #logo {
+	display: inline-block;
+	position: relative;
+	z-index: 200;
+	margin: 25px auto;
+}
+header .banner ul li img {
+	max-width: 100%;
+	height: auto;
+}
+header .banner h1,h2,h3,p {
+	margin: 1em auto;
+}
+
+/* *********** Main *********** */
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+main {
+	margin: 0 .8333%;
+}
+#map {
+	float: right;
+	width: 66.1016%;
+	margin: 0;
+	height: 600px;
+	position: relative;
+	z-index: 0;
+}
+
+
+/* *********** FOOTER *********** */
+
+footer {
+	width: 100%;
+}
+#footer-top {
+	width: 100%;
+	height: 300px;
+	background-color: #666;
+}
+#footer-bottom {
+	width: 100%;
+	background-color: #CCC;
+}

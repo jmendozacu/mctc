@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+		.banner ul {
+			font-size: .6em;
+		}
+		.slideout-menu {
+			display: block;
+			float: none;
+			width: 100%;
+			height: 420px;
+		}
+		#map {
+			float: none;
+			width: 100%;
+		}
+		
+	}

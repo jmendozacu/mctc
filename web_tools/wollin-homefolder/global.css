@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ******* GLOBAL ******* */
+
+body,html,figure,ul,li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #CCC;
+}
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	background-color: white;
+	box-shadow: 0 0 10px #555;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+p {
+	font-size: 105%;
+	margin: 1.5em 0;
+	color: #777;
+}
+.clearfloat { 
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+/* ******* HEADER ******* */
+
+header {
+	width: 1200px;
+	padding: 10px 0 0 0;
+	background-image: url(images/main-bg.png);
+	background-repeat: no-repeat;
+ 	/* background: -webkit-linear-gradient(white 10%, #CCC); /* For Safari 5.1 to 6.0 
+ 	background: -o-linear-gradient(white 10%, #CCC); /* For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(white 10%, #CCC); /* For Firefox 3.6 to 15 
+    background: linear-gradient(white 10%, #CCC); /* Standard syntax */
+}
+header h1 {
+	margin: .5em 0 .25em;
+	color: white;
+	font-weight: 400;
+	font-size: 40px;
+	font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 0 5px #222;
+}
+header h2 {
+	margin: .5em 0 .5em 0;
+	color: white;
+	font-weight: 400;
+	font-size: 26px;
+	font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 0 5px #222;
+}
+header nav {
+	width: 1162px;
+	background-color: #664F78;
+	padding: 19px;
+	clear: left;
+}
+header nav ul {
+	display: block;
+	text-align: center;
+}    
+header ul ul {
+	display: none;
+    position: absolute;
+    z-index: 4;
+	text-align: left;
+}  
+.container header ul ul li a:link {
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    padding-top: 13px;
+}
+.container header nav ul li:hover ul  {
+  	display: block;
+  	margin: 19px -1px;
+  	width: 216px;
+  	background-color: white;
+  	border-bottom: thin solid #CCC;
+  	border-left: thin solid #CCC;
+  	border-right: thin solid #CCC;
+  	position: absolute;
+}
+.container header nav ul li:hover ul li {
+  	display: block;
+}
+.container header nav ul li:hover ul li a {
+  	display: block;
+  	color: #664F78;
+  	font-size: 1em;
+  	padding: 15px 20px; 
+}
+.container header ul ul li a:hover {
+  	background-color: #777;
+	color: white;
+}
+.container header nav ul li:hover ul li a:hover {
+	color: white;
+}
+header nav ul li {
+	padding: 0;
+	display: inline-block;
+	list-item-type: none;
+}
+header ul li a {
+	color: white;
+	padding: 20px;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+header ul li a:hover {
+	background-color: white;
+	color: #664F78;
+}
+header #logo {
+	margin: 0 auto;
+	display: block;
+}
+header #header-top {
+	height: 125px;
+	text-align: center;
+}
+
+/* ******* ASIDE ******* */
+
+aside {
+	width: 219px;
+	height: 475px;
+	float: left;
+}
+.web-icons {
+	font-size: 2em;
+	margin: 10px 0 10px 10px;
+	color: #888;
+}
+aside h3 {
+	margin: 50px 0 0 10px;
+	color: #555;
+	font-size: 1.25em;
+}
+aside ul {
+	padding: 10px 0;
+}
+aside ul li {
+	width: 220px;
+}
+aside ul li a {
+	font-size: 1.25em;
+	font-weight: 200;
+	color: #555;
+	padding: 10px 10px;
+	width: 200px;
+	display: block;
+}
+aside ul li a:hover {
+	background-color: #888;
+	display: block;
+	width: 200px;
+	color: white;
+}
+/* ******* MAIN ******* */
+
+main {
+	width: 960px;
+	height: 475px;
+	margin: 0 0 0 10px;
+	float: right;
+}
+main article {
+	width: 480px;
+	margin: 30px 80px;
+	float: left;
+}
+main article h2 {
+	color: #555;
+}
+main figure {
+	float: right;
+	width: 300px;
+	margin: 60px 10px 0 0;
+}
+
+/* ******* FOOTER ******* */
+
+footer {
+	width: 1200px;
+	clear: both;
+	background-color: #333;
+	color: #CCC;
+}
+footer #footer-top {
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: #664F78;
+}
+footer .social {
+	margin: 75px 25px 0 25px;
+	height: 50px;
+	width: 50px;
+	font-size: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+footer .social a {
+	width: 60px;
+	height: 60px;
+	display: block;
+	border: 2px solid white;
+	color: white;
+	border-radius: 50%;
+}
+footer .social a:hover {
+	background-color: #FFCA36;
+	color: #664F78;
+	border: 2px solid #FFCA36;
+}
+.fa-facebook,.fa-linkedin,.fa-google-plus {
+	margin-top: 18px;
+}
+footer ul {
+	padding: 0 0 50px 0;
+	text-align: center;
+}
+footer ul li {
+	margin: 0 15px;
+	display: inline-block;
+}
+footer #main-footer-nav ul li a {
+	font-size: 1.25em;
+	font-weight: 200;
+	color: white;
+}
+footer #main-footer-nav ul li a:hover {
+	color: #FFCA36;
+}
+footer #footer-bottom {
+	width: 1200px;
+	text-align: center;
+	padding: 30px 0 10px;
+}
+footer #footer-bottom h4 {
+	margin: 0;
+	padding: 5px;
+	font-weight: 200;
+}

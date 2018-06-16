@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Variables</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+	/*
+		What are variables? - Containers for holding data.
+
+		Javascript variables naming rules
+		1. Can start with an upper or lower case letter, dollar sign, or underscore.
+		2. It can include numbers, but not as the first character.
+		3. Variables are case sensitive.
+		4. Avoid reserved words like date, time, alert, true or false.
+		5. No Spaces.
+	*/
+
+	// Variable of type string - values must be in quotes.
+
+	var firstName = "Jon ";
+	var lastName = "Doe";
+
+	// HTML tags can be stored in variables
+
+	var myBr = "<br />";
+
+	// Variables and string literals can be combined together. This method of programming is known as concatenation.
+
+	var fullName = "<h1>Hello, my name is " + firstName + " " + lastName + "</h1>";
+	document.write(firstName,lastName,myBr,fullName);
+
+	// Variable of datatype number - values must not be in quotes. Numbers can be decimals as well.
+	// An = is an assignment operator.
+
+	var num1 = 3;
+	var num2 = 26;
+	var num3 = num1 + num2;
+
+	document.write(3 + " + " + 26 + " = " + num3);
+
+	/* The logic to the right of the assignment operator resolves first. */
+
+	num3 = num3 + 6;
+	document.write(num3);
+	
+	// var type boolean - must be true or false.
+
+	var myBool = true;
+	document.write(myBool,myBr);
+
+	// Undefined variable
+
+	var myVar;
+
+	document.write(myVar);
+
+	// variable of type Null variable can be reset by setting them to null
+
+	var  myVar2 = null;
+
+	document.write(myVar2);
+
+	var myImg = "wolf.jpg";
+
+	// <div><img src="wolf.jpg" alt="Wolf"><!-- Photo by Matt Boulton --></div>
+
+	myImg = "<div><img src=\"" + myImg + "\" alt=\"Wolf\"><!-- Photo by Matt Boulton --></div>";
+
+	document.write(myImg);
+	</script>
+
+</body>
+</html>

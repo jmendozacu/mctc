@@ -1,0 +1,481 @@
+%!Adobe-FontList 1.17
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Book
+FamilyName:Avenir
+StyleName:Book
+MenuName:Avenir Book
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Book
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:72
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Book
+NameArray:0,Mac,4,Avenir Book
+NameArray:0,Win,1,Avenir Book
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-BookOblique
+FamilyName:Avenir
+StyleName:Book Oblique
+MenuName:Avenir Book
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir Book Oblique
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:372
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Book Oblique
+NameArray:0,Mac,4,Avenir Book Oblique
+NameArray:0,Win,1,Avenir Book
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Black
+FamilyName:Avenir
+StyleName:Black
+MenuName:Avenir Black
+StyleBits:2
+WeightClass:800
+WidthClass:5
+AngleClass:0
+FullName:Avenir Black
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:672
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Black
+NameArray:0,Mac,4,Avenir Black
+NameArray:0,Win,1,Avenir Black
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-BlackOblique
+FamilyName:Avenir
+StyleName:Black Oblique
+MenuName:Avenir Black Oblique
+StyleBits:3
+WeightClass:800
+WidthClass:5
+AngleClass:1
+FullName:Avenir Black Oblique
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:956
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Black Oblique
+NameArray:0,Mac,4,Avenir Black Oblique
+NameArray:0,Win,1,Avenir Black Oblique
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Heavy
+FamilyName:Avenir
+StyleName:Heavy
+MenuName:Avenir Heavy
+StyleBits:2
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Avenir Heavy
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:1240
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Heavy
+NameArray:0,Mac,4,Avenir Heavy
+NameArray:0,Win,1,Avenir Heavy
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-HeavyOblique
+FamilyName:Avenir
+StyleName:Heavy Oblique
+MenuName:Avenir Heavy
+StyleBits:3
+WeightClass:900
+WidthClass:5
+AngleClass:1
+FullName:Avenir Heavy Oblique
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:1508
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Heavy Oblique
+NameArray:0,Mac,4,Avenir Heavy Oblique
+NameArray:0,Win,1,Avenir Heavy
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Light
+FamilyName:Avenir
+StyleName:Light
+MenuName:Avenir Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Avenir Light
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:1808
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Light
+NameArray:0,Mac,4,Avenir Light
+NameArray:0,Win,1,Avenir Light
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-LightOblique
+FamilyName:Avenir
+StyleName:Light Oblique
+MenuName:Avenir Light
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Avenir Light Oblique
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:2108
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Light Oblique
+NameArray:0,Mac,4,Avenir Light Oblique
+NameArray:0,Win,1,Avenir Light
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Medium
+FamilyName:Avenir
+StyleName:Medium
+MenuName:Avenir Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Avenir Medium
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:2408
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Medium
+NameArray:0,Mac,4,Avenir Medium
+NameArray:0,Win,1,Avenir Medium
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-MediumOblique
+FamilyName:Avenir
+StyleName:Medium Oblique
+MenuName:Avenir Medium
+StyleBits:1
+WeightClass:500
+WidthClass:5
+AngleClass:1
+FullName:Avenir Medium Oblique
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:2692
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Medium Oblique
+NameArray:0,Mac,4,Avenir Medium Oblique
+NameArray:0,Win,1,Avenir Medium
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Oblique
+FamilyName:Avenir
+StyleName:Oblique
+MenuName:Avenir
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Avenir Oblique
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:2992
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Oblique
+NameArray:0,Mac,4,Avenir Oblique
+NameArray:0,Win,1,Avenir
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Avenir-Roman
+FamilyName:Avenir
+StyleName:Roman
+MenuName:Avenir
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Avenir Roman
+WritingScript:Roman
+OutlineFileName:\Avenir.ttc
+TTCOffset:3292
+DataFormat:sfntData
+FileLength:1586556
+FileModTime:1426733345
+NameArray:0,Mac,18,Avenir Roman
+NameArray:0,Mac,4,Avenir Roman
+NameArray:0,Win,1,Avenir
+NameArray:0,Win,16,Avenir
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-BoldItalic
+FamilyName:Oswald
+StyleName:Bold
+MenuName:Oswald
+StyleBits:3
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Oswald BoldItalic
+WritingScript:Roman
+OutlineFileName:\Oswald-BoldItalic.ttf
+DataFormat:sfntData
+FileLength:90144
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald BoldItalic
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-Demi-BoldItalic
+FamilyName:Oswald
+StyleName:Demi-Bold
+MenuName:Oswald
+StyleBits:3
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Oswald Demi-BoldItalic
+WritingScript:Roman
+OutlineFileName:\Oswald-Demi-BoldItalic.ttf
+DataFormat:sfntData
+FileLength:92168
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald Demi-BoldItalic
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-DemiBold
+FamilyName:Oswald
+StyleName:DemiBold
+MenuName:Oswald
+StyleBits:2
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Oswald DemiBold
+WritingScript:Roman
+OutlineFileName:\Oswald-DemiBold.ttf
+DataFormat:sfntData
+FileLength:74816
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald DemiBold
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-Light
+FamilyName:Oswald
+StyleName:Light
+MenuName:Oswald
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Oswald Light
+WritingScript:Roman
+OutlineFileName:\Oswald-Light.ttf
+DataFormat:sfntData
+FileLength:71576
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald Light
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-Medium
+FamilyName:Oswald
+StyleName:Medium
+MenuName:Oswald
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Oswald Medium
+WritingScript:Roman
+OutlineFileName:\Oswald-Medium.ttf
+DataFormat:sfntData
+FileLength:75668
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald Medium
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-RegularItalic
+FamilyName:Oswald
+StyleName:Regular
+MenuName:Oswald
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Oswald RegularItalic
+WritingScript:Roman
+OutlineFileName:\Oswald-RegularItalic.ttf
+DataFormat:sfntData
+FileLength:91104
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald RegularItalic
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Medium
+FamilyName:Raleway
+StyleName:Medium
+MenuName:Raleway Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Raleway Medium
+WritingScript:Roman
+OutlineFileName:\Raleway-Medium.ttf
+DataFormat:sfntData
+FileLength:179444
+FileModTime:1478219696
+NameArray:0,Mac,4,Raleway Medium
+NameArray:0,Win,1,Raleway Medium
+NameArray:0,Win,16,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Raleway-Regular
+FamilyName:Raleway
+StyleName:Regular
+MenuName:Raleway
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Raleway
+WritingScript:Roman
+OutlineFileName:\Raleway-Regular.ttf
+DataFormat:sfntData
+FileLength:178520
+FileModTime:1478219696
+NameArray:0,Mac,4,Raleway
+NameArray:0,Win,1,Raleway
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TimesNewRomanPSMT
+FamilyName:Times New Roman
+StyleName:Regular
+MenuName:Times New Roman
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Times New Roman
+WritingScript:Roman
+OutlineFileName:\Times New Roman.ttf
+DataFormat:sfntData
+FileLength:834452
+FileModTime:1426733347
+NameArray:0,Mac,4,Times New Roman
+NameArray:0,Win,1,Times New Roman
+%EndFont
+

@@ -1,0 +1,215 @@
+%!Adobe-FontList 1.17
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ACaslonPro-Italic
+FamilyName:Adobe Caslon Pro
+StyleName:Italic
+MenuName:Adobe Caslon Pro
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Adobe Caslon Pro Italic
+WritingScript:Roman
+OutlineFileName:\ACaslonPro-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:168512
+FileModTime:1446575953
+DesignSize:120
+NameArray:0,Mac,4,Adobe Caslon Pro Italic
+NameArray:0,Win,1,Adobe Caslon Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ChaparralPro-Bold
+FamilyName:Chaparral Pro
+StyleName:Bold
+MenuName:Chaparral Pro
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Chaparral Pro Bold
+WritingScript:Roman
+OutlineFileName:\ChaparralPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:126008
+FileModTime:1446575954
+DesignSize:110
+NameArray:0,Mac,4,Chaparral Pro Bold
+NameArray:0,Win,1,Chaparral Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ChaparralPro-Italic
+FamilyName:Chaparral Pro
+StyleName:Italic
+MenuName:Chaparral Pro
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Chaparral Pro Italic
+WritingScript:Roman
+OutlineFileName:\ChaparralPro-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:128628
+FileModTime:1446575954
+DesignSize:110
+NameArray:0,Mac,18,Chaparral Pro Ital
+NameArray:0,Mac,4,Chaparral Pro Italic
+NameArray:0,Win,1,Chaparral Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ChaparralPro-LightIt
+FamilyName:Chaparral Pro
+StyleName:Light Italic
+MenuName:Chaparral Pro Light
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Chaparral Pro Light Italic
+WritingScript:Roman
+OutlineFileName:\ChaparralPro-LightIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:125688
+FileModTime:1446575954
+DesignSize:110
+NameArray:0,Mac,18,Chaparral Pro Light Ital
+NameArray:0,Mac,4,Chaparral Pro Light Italic
+NameArray:0,Win,1,Chaparral Pro Light
+NameArray:0,Win,16,Chaparral Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ChaparralPro-Regular
+FamilyName:Chaparral Pro
+StyleName:Regular
+MenuName:Chaparral Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Chaparral Pro
+WritingScript:Roman
+OutlineFileName:\ChaparralPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:127864
+FileModTime:1446575954
+DesignSize:110
+NameArray:0,Mac,4,Chaparral Pro
+NameArray:0,Win,1,Chaparral Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FontAwesome
+FamilyName:FontAwesome
+StyleName:Regular
+MenuName:FontAwesome
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:FontAwesome
+WritingScript:Roman
+OutlineFileName:\FontAwesome.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:106260
+FileModTime:1441123834
+NameArray:0,Mac,4,FontAwesome
+NameArray:0,Win,1,FontAwesome
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:218640
+FileModTime:1446575956
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-DemiBold
+FamilyName:Oswald
+StyleName:DemiBold
+MenuName:Oswald
+StyleBits:2
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Oswald DemiBold
+WritingScript:Roman
+OutlineFileName:\Oswald-DemiBold.ttf
+DataFormat:sfntData
+FileLength:74816
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald DemiBold
+NameArray:0,Win,1,Oswald
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Oswald-RegularItalic
+FamilyName:Oswald
+StyleName:Regular
+MenuName:Oswald
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Oswald RegularItalic
+WritingScript:Roman
+OutlineFileName:\Oswald-RegularItalic.ttf
+DataFormat:sfntData
+FileLength:91104
+FileModTime:1478220282
+NameArray:0,Mac,4,Oswald RegularItalic
+NameArray:0,Win,1,Oswald
+%EndFont
+

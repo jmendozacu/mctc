@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email Regular Expression</title>
+	<script type="text/javascript">
+		function checkme() {
+			var email = document.getElementById('email').value;
+			var reg_exp_email = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+			var valid = reg_exp_email.test(email);
+			
+			if(valid == true) {
+				return true;
+			}
+			else if(valid == false) {
+				alert("Please enter a valid email address");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	
+	<form onsubmit="return checkme();">
+		<input type="text" id="email" value="Enter your email address" onfocus="if(this.value=='Enter your Email Address')this.value='';">
+		<input type="submit" value="Check me out!" >		
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Conditional Logic</title>
+</head>
+<body>
+	
+<script type="text/javascript">
+
+	// = or equals sign is an assignment operator.
+	// == and === are comparison or relational operators.
+
+	var num1 = prompt("Enter num1", "");
+
+	if(num1 == 3) {
+		document.write("It's 3!<br>");
+	}
+	else if(num1 == 4) {
+		document.write("It's 4!<br>");
+	}
+	else if(num1 == 5) {
+		document.write("It's 5<br>");
+	}
+	else {
+		document.write("The Value is " + num1 + "<br>");
+	}
+
+	// ? is a conditional operator
+
+	var visitor = prompt("Please enter male or female", "");
+	var greeting = (visitor == "female")?"dear Miss" : "dear Sir";
+	document.write("Hello " + greeting);
+
+	
+
+
+</script>
+
+</body>
+</html>

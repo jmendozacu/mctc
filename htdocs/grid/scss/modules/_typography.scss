@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500|Lato:400,700');
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Fira Sans', sans-serif;
+}
+p,pre,a,ol,ul,li,input,label,dd,dl,dt,figcaption,figure,div {
+  font-family: 'Lato', sans-serif;
+}
+@for $i from 1 through 6 {
+  $size-calc: 3 - .25 * $i;
+  $margin-calc: 2.5 - .25 * $i;
+  h#{$i},.h#{$i} {
+    font-size: $size-calc+rem;
+    margin: $margin-calc+rem 0;
+  }
+}

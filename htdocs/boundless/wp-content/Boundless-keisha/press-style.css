@@ -1,0 +1,51 @@
+
+div.press-speakers {
+    margin: 0 auto;
+    margin-top: 25px;
+    float: left;
+    padding: 0 30px;
+}
+.press-section {
+    border-bottom: 0;
+    clear: both;
+    float: none;
+}
+.press-profile {
+    float: left;
+    margin-right: 20px;
+    /*margin-left: 150px;*/
+}
+h1.press-h1 {
+    background-color: #6772B7;
+    font-size: 2em;
+    width: 35%;
+    text-align: right;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 0 #353c69;
+}
+/*p.speaker-p {*/
+    /*margin-right: 150px;*/
+/*}*/
+div#press-twitter {
+    background-color: #90d1bb;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+div#press-instagram {
+    text-align: center;
+}
+/*div.timeline-Widget {*/
+    /*border-radius: 0 !important;*/
+/*}*/
+/*.btn {*/
+    /*background-color: #90d1bb !important;*/
+/*}*/
+
+
+@media (max-width: 649px) {
+    .speaker-text {
+        float: left;
+    }
+}
